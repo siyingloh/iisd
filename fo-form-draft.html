@@ -7,7 +7,7 @@
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>IISD Dashboard</title>
+  <title>IISD Form Draft</title>
 
   <!-- Favicon icon -->
   <link rel="icon" type="image/png" sizes="16x16" href="package/assets/images/favicon.png" />
@@ -45,216 +45,148 @@
           <div class="d-flex justify-content-end w-100" id="navbarSupportedContent">
             <!-- Right side toggle and nav items -->
             <ul class="navbar-nav">
-              <!-- Comment -->
+              <!-- Notification -->
               <li class="nav-item dropdown">
-                <a class="nav-link waves-effect waves-dark" href="#" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link waves-effect waves-dark">
                   <i class="mdi mdi-message"></i>
                   <div class="notify">
                     <span class="heartbit"></span> <span class="point"></span>
                   </div>
                 </a>
               </li>
-              <!-- End Comment -->
+              <!-- End Notification -->
               <!-- Profile -->
               <li class="nav-item">
-                <a class="nav-link waves-effect waves-dark" href="#" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link waves-effect waves-dark">
                   <i class="fa fa-user"></i>
+                </a>
+              </li>
+              <!-- Logout -->
+              <li class="nav-item">
+                <a class="nav-link pl-5" href="#">
+                  LOGOUT
                 </a>
               </li>
             </ul>
           </div>
         </nav>
+ <!-- form sub header start -->
+ <div class="form-header">
+   <div class="container">
+     <div class="d-flex flex-row">
+      <div class="col-md-4 d-flex flex-row align-items-cneter">
+        <a href=""><span>Delete Form</span></a>
+        <a href=""><span>Instruction</span></a>
+        <a href=""><span>Guideline</span></a>
+      </div>
+      <div class="col-md-4 d-flex flex-row justify-content-center align-items-center">
+        <span>FORM 123</span>
+        <span> - </span>
+        <span>DRAFT</span>
+      </div>
+      <div class="col-md-4 d-flex flex-column align-items-end">
+        <span> Alignment score: </span>
+        <span>Form Owner - xx/xx</span>
+     </div>
+   </div>
+ </div>
+ <!-- form subheader end -->
       </header>
-      <!-- -------------------------------------------------------------- -->
       <!-- End Topbar header -->
-      <!-- -------------------------------------------------------------- -->
-      
-      <!-- Page wrapper  -->
-      <div class="main-wrapper">
-        
-        <!-- -------------------------------------------------------------- -->
-        <!-- Container fluid  -->
-        <!-- -------------------------------------------------------------- -->
-        <div class="container-fluid nav-offset">
+      <!-- Left Sidebar -->
+      <aside class="left-sidebar">
+        <!-- Sidebar scroll-->
+        <div class="scroll-sidebar">
           
-        <div class="container ">
-          <!-- Row -->
-          <div class="row">
-            <div class="mt-3 mb-5 d-flex justify-content-between">
-              <div class="col-md-6">
-                <h1>FORMS</h1>
-              </div>
-              <div class="col-md-6 d-flex justify-content-end">
-                <a href="" class="btn btn-info-alt d-flex align-items-center">
-                  Create Form
-                </a>
-              </div>
-            </div>
-            <!-- Tab Form Starts-->
-            <div class="p-3">
-               <!-- Nav tabs -->
-            <ul class="nav nav-tabs" role="tablist">
-                <li class="nav-item">
-                    <a class="nav-link active" data-bs-toggle="tab" href="#draft" role="tab">
-                        <span>Draft (1)</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-bs-toggle="tab" href="#review" role="tab">
-                        <span>Reviewing in Progress (3)</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-bs-toggle="tab" href="#validate" role="tab">
-                        <span>Validating in Progress (0)</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" data-bs-toggle="tab" href="#past" role="tab">
-                      <span>Past Forms (0)</span>
-                  </a>
+          <!-- Sidebar navigation-->
+          <nav class="sidebar-nav">
+            <ul id="sidebarnav">
+              <li class="sidebar-item">
+                <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false"><span class="hide-menu">Calendar</span></a>
               </li>
-            </ul>
-            <!-- Tab panes -->
-            <div class="tab-content">
-                <div class="tab-pane active" id="draft" role="tabpanel">
-                    <div class="px-3 pt-5 pb-3">
-                        <div class="card my-3 p-3">
-                          <div class="d-flex">
-                            <div class="col-md-6 d-flex flex-column">
-                              <span class="mb-3">
-                                FORM 125
-                              </span>
-                              <a href="" class="form-link">
-                                REVIEWER
-                              </a>
-                              <a href="" class="form-link">
-                                EXPORT
-                              </a>
-                            </div>
-                            <div class="col-md-6 d-flex flex-column justify-content-between align-items-end">
-                              <span class="mb-3">
-                                Score: xx / xx
-                              </span>
-                              <a href="" class="btn btn-info-alt">
-                                View Form
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane" id="review" role="tabpanel">
-                  <div class="px-3 pt-5 pb-3">
-                    <div class="card my-3 p-3">
-                      <div class="d-flex">
-                        <div class="col-md-6 d-flex flex-column">
-                          <span class="mb-3">
-                            FORM 123
-                          </span>
-                          <a href="" class="form-link">
-                            REVIEWER
-                          </a>
-                          <a href="" class="form-link">
-                            EXPORT
-                          </a>
-                        </div>
-                        <div class="col-md-6 d-flex flex-column justify-content-between align-items-end">
-                          <span class="mb-3">
-                            Score: xx / xx
-                          </span>
-                          <a href="" class="btn btn-info-alt">
-                            View Form
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card my-3 p-3">
-                      <div class="d-flex">
-                        <div class="col-md-6 d-flex flex-column">
-                          <span class="mb-3">
-                            FORM 124
-                          </span>
-                          <a href="" class="form-link">
-                            REVIEWER
-                          </a>
-                          <a href="" class="form-link">
-                            EXPORT
-                          </a>
-                        </div>
-                        <div class="col-md-6 d-flex flex-column justify-content-between align-items-end">
-                          <span class="mb-3">
-                            Score: xx / xx
-                          </span>
-                          <a href="" class="btn btn-info-alt">
-                            View Form
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card my-3 p-3">
-                      <div class="d-flex">
-                        <div class="col-md-6 d-flex flex-column">
-                          <span class="mb-3">
-                            FORM 125
-                          </span>
-                          <a href="" class="form-link">
-                            REVIEWER
-                          </a>
-                          <a href="" class="form-link">
-                            EXPORT
-                          </a>
-                        </div>
-                        <div class="col-md-6 d-flex flex-column justify-content-between align-items-end">
-                          <span class="mb-3">
-                            Score: xx / xx
-                          </span>
-                          <a href="" class="btn btn-info-alt">
-                            View Form
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="tab-pane" id="validate" role="tabpanel">
-                  <div class="px-3 py-5">
-                    <p>There are currently no forms in this tab</p>
-                  </div>
-                </div>
-                <div class="tab-pane" id="past" role="tabpanel">
-                  <div class="px-3 py-5">
-                    <p>There are currently no forms in this tab</p>
-                  </div>
-
-                  
-              </div>
-            </div>
-            </div>
-            <!-- Tap Forms End-->
-           <!-- Pagination -->
-           <nav aria-label="...">
-            <ul class="pagination d-flex justify-content-end">
-              <li class="page-item disabled prev">
-                <a class="page-link" href="#" tabindex="-1">Prev</a>
+              <li class="sidebar-item">
+                <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false"><span class="hide-menu">Chat Apps</span></a>
               </li>
-              <li class="page-item"><a class="page-link" href="#">1</a></li>
-              <li class="page-item active">
-                <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+              <li class="sidebar-item">
+                <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false"><span class="hide-menu">Contact</span></a>
               </li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
-              <li class="page-item next">
-                <a class="page-link" href="#">Next</a>
+              <li class="sidebar-item">
+                <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false"><span class="hide-menu">Invoice</span></a>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false"><span class="hide-menu">Notes</span></a>
+              </li>
+              <li class="sidebar-item">
+                <a
+                  class="sidebar-link waves-effect waves-dark sidebar-link" href="" aria-expanded="false"><span class="hide-menu">Todo</span></a>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false"><span class="hide-menu">Taskboard</span></a>
               </li>
             </ul>
           </nav>
-           <!-- End Pagination -->
+          <!-- End Sidebar navigation -->
+        </div>
+        <!-- End Sidebar scroll-->
+      </aside>
+      <!-- -------------------------------------------------------------- -->
+      <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+      <!-- -------------------------------------------------------------- -->
+      <!-- Page wrapper  -->
+      <div class="main-wrapper position-relative">
+      <div class="page-wrapper">
+        <!-- -------------------------------------------------------------- -->
+        <!-- Container fluid  -->
+        <!-- -------------------------------------------------------------- -->
+        <div class="container-fluid ">
+        <div class="form-card card nav-offset bg-light-green">
+          <!-- Row -->
+          <div class="row p-3">
+            <!-- Form Content start -->
+            <div class="col-md-6">
+              <div class="d-flex flex-row">
+              <span class="px-5">10.1</span>
+              <p>
+                Developing shared approaches to FAF investment promotion and facilitation, sharing information on investments requiring cross-ASEAN financing and expertise, discouraging ‘race to the bottom’ investment promotion practices and encouraging a ‘race to the top’ in investment promotion practices.																		
+              </p>
+
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-floating mb-3">
+                <div>REF</div>
+                <input type="text" class="form-control" id="ref_10_1" placeholder="">
+              </div>
+              <div>Description /excerpt and hyperlink</div>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="des_10_1" placeholder="">
+              </div>
+              <div class="mb-3 d-flex flex-row">
+                <div class="form-check pr-3">
+                  <input type="radio" id="customRadio11" name="customRadio" class="form-check-input">
+                  <label class="form-check-label" for="customRadio11">FA</label>
+                </div>
+                <div class="form-check">
+                  <input type="radio" id="customRadio22" name="customRadio" class="form-check-input">
+                  <label class="form-check-label" for="customRadio22">PA</label>
+                </div>
+                <div class="form-check">
+                  <input type="radio" id="customRadio22" name="customRadio" class="form-check-input">
+                  <label class="form-check-label" for="customRadio22">NA</label>
+                </div>
+              </div>
+
+            </div>
+            <!-- Content end -->
+           
           </div>
           <!-- Row -->
         </div>
         </div>
         <!-- End Container fluid  -->
         
+      </div>
+
       </div>
       <!-- -------------------------------------------------------------- -->
       <!-- End Page wrapper  -->
@@ -293,7 +225,7 @@
           LogoBg: "skin2", // You can change the Value to be skin1/skin2/skin3/skin4/skin5/skin6
          // NavbarBg: "skin2", // You can change the Value to be skin1/skin2/skin3/skin4/skin5/skin6
           SidebarType: "full", // You can change it full / mini-sidebar / iconbar / overlay
-          SidebarColor: "skin2", // You can change the Value to be skin1/skin2/skin3/skin4/skin5/skin6
+          SidebarColor: "skin6", // You can change the Value to be skin1/skin2/skin3/skin4/skin5/skin6
           SidebarPosition: true, // it can be true / false ( true means Fixed and false means absolute )
           HeaderPosition: true, // it can be true / false ( true means Fixed and false means absolute )
           BoxedLayout: false, // it can be true / false ( true means Boxed and false means Fluid )

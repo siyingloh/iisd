@@ -86,3 +86,66 @@ a:hover,
     background-color: #0E3267;
     border-color: #0E3267;
 }
+.notif-card.unread {
+    border: 1px solid #0E3267;
+    color: #0E3267;
+}
+.notif-card.read {
+    color: #C4C4C4; 
+}
+.notif-card {
+    margin-bottom: 1rem;
+}
+.topbar .top-navbar .navbar-nav>.nav-item>.nav-link {
+    line-height: 70px;
+    height: 70px;
+    padding: 0 1.75rem;
+    font-size: 19px;
+}
+.form-header {
+    background: #0E3267;
+    padding: 1rem 0;
+}
+.form-header * {
+    color: #fff;
+}
+.form-header a span {
+    padding-right: 1.75rem;
+}
+.scroll-sidebar {
+    height:100%;
+}
+#sidebarnav {
+    padding:0;
+    background: #C7E3E3 !important;
+    }
+.sidebar-nav {
+    margin-top: 5rem;
+}
+#main-wrapper[data-layout=vertical] .left-sidebar[data-sidebarbg=skin6] .sidebar-nav ul .sidebar-item.selected>.sidebar-link {
+    color: #000 !important;
+    background-color: #eef5f9;
+    border-radius: 0;
+}
+#main-wrapper[data-layout=horizontal] .left-sidebar[data-sidebarbg=skin6], #main-wrapper[data-layout=vertical] .left-sidebar[data-sidebarbg=skin6] {
+    background: #C7E3E3;
+
+}
+.sidebar-link {
+    display:flex;
+    justify-content: center;
+}
+.bg-light-green {
+    background: #C7E3E3;
+}
+.form-check {
+    padding-right: 1rem;
+}
+.form-check-input {
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+.form-check-input:checked {
+    background-color: #transparent;
+    border-color: 2px solid #1e88e5;
+}
