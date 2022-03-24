@@ -27,11 +27,16 @@ footer.footer {
 }
 .btn {
     padding: 0.5rem 3.75rem;
+    transition: 300ms ease all;
 }
 .btn.btn-info-alt {
     padding: 0.25rem 3.75rem;
     border: 1px solid #051c47;
     color: #051c47;
+}
+.btn.btn-info-alt:hover {
+    background-color: #051c47;
+    color: #fff;;
 }
 .card .btn.btn-info-alt {
     padding: 0.25rem 2.75rem;
@@ -40,20 +45,24 @@ footer.footer {
     padding-top: 100px;
 }
 .tab-content {
-    background: #529546;
-    border-left: 1px solid #fff;
+    background: #f9f9f9;
+    border-left: 1px solid #529546;
+    border: 1px solid #529546;
     min-height: 50vh;
 }
+.nav-tabs {
+    margin-bottom: -1px;
+}
 .nav-tabs .nav-link {
-    background: #529546;
-    border-color: #fff #fff #fff;
+    background: #f9f9f9;
+    border-color: #529546 #529546 #529546;
     margin-right: 3rem;
 }
 .nav-tabs .nav-item.show .nav-link, 
 .nav-tabs .nav-link.active {
     color: #021E20;
-    background-color: #529546;
-    border-color: #fff #fff #529546;
+    background-color: #f9f9f9;
+    border-color: #529546 #529546 #f9f9f9;
 }
 a,
 .nav-link {
@@ -62,6 +71,9 @@ a,
 a:hover,
 .nav-link:hover {
     color: #051c47;
+}
+.auth-box a {
+    color: #fff;
 }
 #main-wrapper {
     min-height:100vh;
@@ -130,13 +142,14 @@ a:hover,
 .sidebar-nav {
     margin-top: 5rem;
 }
-/* #main-wrapper[data-layout=horizontal] .topbar .navbar-collapse[data-navbarbg=skin6], #main-wrapper[data-layout=horizontal] .topbar[data-navbarbg=skin6], #main-wrapper[data-layout=vertical] .topbar .navbar-collapse[data-navbarbg=skin6], #main-wrapper[data-layout=vertical] .topbar[data-navbarbg=skin6] {
+.topbar,
+#main-wrapper[data-layout=horizontal] .topbar .navbar-collapse[data-navbarbg=skin6], #main-wrapper[data-layout=horizontal] .topbar[data-navbarbg=skin6], #main-wrapper[data-layout=vertical] .topbar .navbar-collapse[data-navbarbg=skin6], #main-wrapper[data-layout=vertical] .topbar[data-navbarbg=skin6] {
 
-    background: #051c47;
+    background: #529546;
 }
 .navbar-light .navbar-nav .nav-link {
     color: #fff;
-} */
+}
 #main-wrapper[data-layout=vertical] .left-sidebar[data-sidebarbg=skin6] .sidebar-nav ul .sidebar-item.selected>.sidebar-link {
     color: #051c47 !important;
     background-color: #fff;
@@ -173,4 +186,10 @@ a:hover,
 .form-check-input:checked {
     background-color: transparent;
     border-color: #fff;
+}
+.hide {
+    display: none !important;
+}
+.sidebar-nav ul .sidebar-item .sidebar-link {
+    padding: 8px 25px 8px 25px;
 }

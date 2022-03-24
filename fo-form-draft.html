@@ -67,6 +67,23 @@
                   LOGOUT
                 </a>
               </li>
+              <li class="nav-item dropdown">
+                <a class="
+                    nav-link
+                    dropdown-toggle
+                    text-muted
+                    waves-effect waves-dark
+                  " href="" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="flag-icon flag-icon-us"></i></a>
+                <div class="
+                    dropdown-menu dropdown-menu-end dropdown-menu-animate-up
+                  ">
+                  <a class="dropdown-item" href="#"><i class="flag-icon flag-icon-in"></i> India</a>
+                  <a class="dropdown-item" href="#"><i class="flag-icon flag-icon-fr"></i> French</a>
+                  <a class="dropdown-item" href="#"><i class="flag-icon flag-icon-cn"></i> China</a>
+                  <a class="dropdown-item" href="#"><i class="flag-icon flag-icon-de"></i> Dutch</a>
+                </div>
+              </li>
             </ul>
           </div>
         </nav>
@@ -74,7 +91,7 @@
  <div class="form-header">
    <div class="container">
      <div class="d-flex flex-row">
-      <div class="col-md-4 d-flex flex-row align-items-cneter">
+      <div class="col-md-4 d-flex flex-row align-items-center">
         <a href=""><span>Delete Form</span></a>
         <a href=""><span>Instruction</span></a>
         <a href=""><span>Guideline</span></a>
@@ -102,10 +119,10 @@
           <nav class="sidebar-nav">
             <ul id="sidebarnav">
               <li class="sidebar-item">
-                <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false"><span class="hide-menu">Calendar</span></a>
+                <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false"><span class="hide-menu">Food & Nutrition Security</span></a>
               </li>
               <li class="sidebar-item">
-                <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false"><span class="hide-menu">Chat Apps</span></a>
+                <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false"><span class="hide-menu">Economic Development</span></a>
               </li>
               <li class="sidebar-item">
                 <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false"><span class="hide-menu">Contact</span></a>
@@ -176,7 +193,7 @@
                   </div>
                 </div>
                 <!-- Scoring for PA -->
-                <div class="mb-3 d-flex flex-row pa-rating">
+                <div class="mb-3 d-flex flex-row pa-rating pa-1-1 hide">
                   <div class="form-check pr-3">
                     <input type="radio" id="pa_1_1_1" name="pa-1-1" class="form-check-input">
                     <label class="form-check-label" for="pa_1_1_1">1</label>
@@ -238,7 +255,7 @@
                   </div>
                 </div>
                 <!-- Scoring for PA -->
-                <div class="mb-3 d-flex flex-row pa-rating">
+                <div class="mb-3 d-flex flex-row pa-rating pa-1-2 hide">
                   <div class="form-check pr-3">
                     <input type="radio" id="pa_1_2_1" name="pa-1-2" class="form-check-input">
                     <label class="form-check-label" for="pa_1_2_1">1</label>
@@ -318,14 +335,26 @@
     <script src="package/assets/extra-libs/sparkline/sparkline.js"></script>
     <!--Wave Effects -->
     <script src="package/dist/js/waves.js"></script>
-    <!--Menu sidebar -->
-    <script src="package/dist/js/sidebarmenu.js"></script>
     <!--Custom JavaScript -->
     <script src="package/dist/js/feather.min.js"></script>
     <script src="package/dist/js/custom.min.js"></script>
-    <!--This page JavaScript -->
-    <script src="package/assets/libs/apexcharts/dist/apexcharts.min.js"></script>
-    <script src="package/dist/js/pages/dashboards/dashboard1.js"></script>
+    <script>
+      $(document).ready(function () {
+
+      $('input[type="radio"]').click(function () {
+        console.log("test");
+          if ($(this).attr("value") == "pa_1_1") {
+              $(".pa-1-1").removeClass('hide');
+          }
+          if ($(this).attr("value") == "pa_1_2") {
+              $(".pa-1-2").removeClass("hide");
+
+          }
+      });
+
+      $('input[type="radio"]').trigger('click');  // trigger the event
+      });
+    </script>
 </body>
 
 </html>
