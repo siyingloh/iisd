@@ -57,6 +57,22 @@ footer.footer {
 .tab-content .card {
     border: 1px solid #ccc;
 }
+.reviewer-accordion .card {
+    background-color: #f9f9f9;
+    border: none;
+    border-top: 1px solid #ccc;
+    border-radius: 0;
+}
+.form-content .reviewer-accordion .card-header {
+    border-radius: 0;
+    transition: 300ms ease all;
+}
+.form-content .reviewer-accordion .card-header:hover{
+    background: #fff !important;
+}
+.card-header {
+    background-color: transparent;
+}
 .nav-tabs {
     margin-bottom: -1px;
 }
@@ -70,6 +86,10 @@ footer.footer {
     color: #021E20;
     background-color: #f9f9f9;
     border-color: #051c47 #051c47 #f9f9f9;
+}
+.nav-tabs.form-tabs .nav-link {
+    margin-right: 1.5rem;
+    padding: 0.5rem 1.75rem;
 }
 a,
 .nav-link {
