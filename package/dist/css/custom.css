@@ -79,7 +79,7 @@ footer.footer {
 .nav-tabs .nav-link {
     background: #f9f9f9;
     border-color: #051c47 #051c47 #051c47;
-    margin-right: 3rem;
+    margin-right: 0;
 }
 .nav-tabs .nav-item.show .nav-link, 
 .nav-tabs .nav-link.active {
@@ -88,7 +88,6 @@ footer.footer {
     border-color: #051c47 #051c47 #f9f9f9;
 }
 .nav-tabs.form-tabs .nav-link {
-    margin-right: 1.5rem;
     padding: 0.5rem 1.75rem;
 }
 a,
@@ -142,7 +141,8 @@ a:hover,
     color: #051c47;
 }
 .notif-card.read {
-    color: #fff; 
+    border: 1px solid #ccc;
+    color: #ccc;
 }
 .notif-card {
     margin-bottom: 1rem;
@@ -151,7 +151,7 @@ a:hover,
     line-height: 70px;
     height: 70px;
     padding: 0 1.75rem;
-    font-size: 19px;
+    font-size: 16px;
 }
 .form-header {
     background: #051c47;
@@ -233,4 +233,16 @@ a:hover,
 }
 .sidebar-nav ul .sidebar-item .sidebar-link {
     padding: 8px 25px 8px 25px;
+}
+.admin-page .sidebar-nav{
+    margin-top: 3rem;
+}
+.admin-page .nav-offset {
+    margin-top: 0;
+}
+.w-200 {
+    width: 210px;
+    text-align: center;
+    justify-content: center;
+
 }
