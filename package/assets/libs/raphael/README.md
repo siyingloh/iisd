@@ -10,7 +10,7 @@ You need to have NPM installed to build the library.
 * `npm run start`
 * `npm run build`
 
-To run tests you need to open `dev/test/index.html` in your browser, there's no automated way right now.
+To run tests you need to open `dev/test/fo-dashboard.html` in your browser, there's no automated way right now.
 
 ## Dependencies
 * [eve](https://github.com/adobe-webplatform/eve)

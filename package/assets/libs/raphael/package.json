@@ -69,7 +69,7 @@
   "scripts": {
     "build": "webpack && webpack --min && webpack --no-deps && webpack --no-deps --min",
     "start": "npm install && bower install",
-    "test": "echo \"Open dev/test/index.html with your browser\" && exit 1"
+    "test": "echo \"Open dev/test/fo-dashboard.html with your browser\" && exit 1"
   },
   "version": "2.2.7"
 }

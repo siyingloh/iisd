@@ -41,7 +41,7 @@
     }
   ],
   "demos": [
-    "demo/index.html"
+    "demo/fo-dashboard.html"
   ],
   "dependencies": {
     "jquery": "^3.3.1"
