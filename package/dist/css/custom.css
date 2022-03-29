@@ -136,6 +136,7 @@ a:hover,
     background-color: #051c47;
     border-color: #051c47;
 }
+.border-dark,
 .notif-card.unread {
     border: 1px solid #051c47;
     color: #051c47;
