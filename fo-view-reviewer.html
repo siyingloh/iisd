@@ -7,7 +7,7 @@
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>IISD View Reviewer</title>
+  <title>IISD View Reviewers</title>
 
   <!-- Favicon icon -->
   <link rel="icon" type="image/png" sizes="16x16" href="package/assets/images/favicon.png" />
@@ -105,125 +105,248 @@
           <div class="row">
             <div class="mt-3 mb-5 d-flex justify-content-between">
               <div class="col-md-6">
-                <h1>ACCOUNT
-                </h1>
+                <h1>REVIEWERS</h1>
               </div>
               <div class="col-md-6 d-flex justify-content-end">
-
-                <a href="" class="btn btn-info-alt d-flex align-items-center">
+                <a href="fo-form-draft.html" class="btn btn-info-alt d-flex align-items-center">
                   Back
                 </a>
               </div>
             </div>
-            <!-- Content Starts-->
+            <!-- Tab Form Starts-->
             <div class="p-3">
-                <div class="form-card card bg-light my-5 py-5 border-dark">
-                  <!-- Row -->
-                  <div class="row">
-                      <div class="col-md-9 mx-auto">
-                          
-                      <form class="form-horizontal" action="index.html">
+               <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" data-bs-toggle="tab" href="#draft" role="tab">
+                        <span>Add Reviewer</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#review" role="tab">
+                        <span>Reviewer Status</span>
+                    </a>
+                </li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div class="tab-pane active" id="draft" role="tabpanel">
+                    <div class="px-5 pt-5 pb-3 row">
+                      <form class="col-md-9 mx-auto form-horizontal" action="index.html">
+                      <!-- Field -->
+                      <div class="row">
+                        <div class="col-md-3">
+                          <label class="control-label col-form-label">Email</label>
+                        </div>
+                        <div class="col-md-9">
                           <div class="form-floating mb-3">
-                              <input
-                                type="text"
-                                class="form-control form-input-bg"
-                                id="tb-newname"
-                                placeholder=""
-                                required
-                              />
-                              <label for="tb-newname">Ful Name</label>
-                              <div class="invalid-feedback">Full name is required</div>
-                          </div>
-                          <div class="row">
-                              <div class="col-md-6">
-                              <div class="form-floating mb-3">
                             <input
                               type="email"
                               class="form-control form-input-bg"
-                              id="tb-newemail"
+                              id="tb-name"
                               placeholder=""
                               required
                             />
-                            <label for="tb-newemail">Email</label>
                             <div class="invalid-feedback">Email is required</div>
-                          </div>
-                              </div>
-                              <div class="col-md-6">
-                                  <div class="form-floating mb-3">
-                              <input
-                                type="number"
-                                class="form-control form-input-bg"
-                                id="tb-newnum"
-                                placeholder=""
-                                required
-                              />
-                              <label for="tb-newnum">Contact</label>
-                              <div class="invalid-feedback">Contact is required</div>
-                          </div>
-                              </div>
-                          </div>
+                        </div>                
+                        </div>
+                      </div>
+                      <!-- End Field-->
+                      <!-- Field -->
+                      <div class="row">
+                        <div class="col-md-3">
+                          <label class="control-label col-form-label">Full Name</label>
+                        </div>
+                        <div class="col-md-9">
                           <div class="form-floating mb-3">
-                              <input
-                                type="text"
-                                class="form-control form-input-bg"
-                                id="tb-neworg"
-                                placeholder=""
-                                required
-                              />
-                              <label for="tb-neworg">Organization</label>
-                              <div class="invalid-feedback">Organization is required</div>
-                          </div>
+                            <input
+                              type="text"
+                              class="form-control form-input-bg"
+                              id="tb-name"
+                              placeholder=""
+                              required
+                            />
+                            <div class="invalid-feedback">Full Name is required</div>
+                        </div>                
+                        </div>
+                      </div>
+                      <!-- End Field-->
+                      <!-- Field -->
+                      <div class="row">
+                        <div class="col-md-3">
+                          <label class="control-label col-form-label">Country</label>
+                        </div>
+                        <div class="col-md-9">
                           <div class="form-floating mb-3">
-                              <input
-                                type="text"
-                                class="form-control form-input-bg"
-                                id="tb-newtitle"
-                                placeholder=""
-                              />
-                              <label for="tb-newtitle">Job Title</label>
-                          </div>
+                            <input
+                              type="text"
+                              class="form-control form-input-bg"
+                              id="tb-country"
+                              placeholder=""
+                              required
+                            />
+                            <div class="invalid-feedback">Country is required</div>
+                        </div>                
+                        </div>
+                      </div>
+                      <!-- End Field-->
+                      <!-- Field -->
+                      <div class="row">
+                        <div class="col-md-3">
+                          <label class="control-label col-form-label">Country</label>
+                        </div>
+                        <div class="col-md-9">
                           <div class="form-floating mb-3">
-                              <input
-                                type="text"
-                                class="form-control form-input-bg"
-                                id="tb-newadd1"
-                                placeholder=""
-                                required
-                              />
-                              <label for="tb-newadd1">Address Line 1</label>
-                              <div class="invalid-feedback">Address is required</div>
-                          </div>
+                            <input
+                              type="text"
+                              class="form-control form-input-bg"
+                              id="tb-country"
+                              placeholder=""
+                              required
+                            />
+                            <div class="invalid-feedback">Country is required</div>
+                        </div>                
+                        </div>
+                      </div>
+                      <!-- End Field-->
+                      <!-- Field -->
+                      <div class="row">
+                        <div class="col-md-3">
+                          <label class="control-label col-form-label">Organization Name</label>
+                        </div>
+                        <div class="col-md-9">
                           <div class="form-floating mb-3">
-                              <input
-                                type="text"
-                                class="form-control form-input-bg"
-                                id="tb-newadd2"
-                                placeholder=""
-                              />
-                              <label for="tb-newadd2">Address Line 2</label>
+                            <input
+                              type="text"
+                              class="form-control form-input-bg"
+                              id="tb-organization"
+                              placeholder=""
+                              required
+                            />
+                            <div class="invalid-feedback">Organization Name is required</div>
+                        </div>                
+                        </div>
+                      </div>
+                      <!-- End Field-->
+                      <!-- Field -->
+                      <div class="row">
+                        <div class="col-md-3">
+                          <label class="control-label col-form-label">Job Title</label>
+                        </div>
+                        <div class="col-md-9">
+                          <div class="form-floating mb-3">
+                            <input
+                              type="text"
+                              class="form-control form-input-bg"
+                              id="tb-jobtitle"
+                              placeholder=""
+                              required
+                            />
+                            <div class="invalid-feedback">Job Title is required</div>
+                        </div>                
+                        </div>
+                      </div>
+                      <!-- End Field-->
+                      
+                      
+                      
+                      <div class="d-flex align-items-stretch justify-content-end">
+                        <button type="submit" class="btn btn-info d-block">
+                          Add User
+                        </button>
+                      </div>
+                    </form>
+                    </div>
+                </div>
+                <div class="tab-pane" id="review" role="tabpanel">
+                  <div class="px-3 pt-5 pb-3">
+                    
+                        <div class="d-flex flex-row">
+                          <div class="col-md-8 card p-3 d-flex flex-row notif-card">
+                            <div class="col-md-6">
+                              <span class="">
+                                JOHN12@email.com
+                              </span>
+                            </div>
+                            <div class="col-md-6 text-right">
+                              <span>
+                                REQUESTED
+                              </span>
+                            </div>
                           </div>
-                          
-                          
-                          
-                          <div class="d-flex align-items-stretch justify-content-end mt-5">
-                            <a href="fo-dashboard.html" class="btn btn-info-alt d-block mx-3">
-                              Back
-                            </a>
-                            <button type="submit" class="btn btn-info d-block">
-                              Update
-                            </button>
+                          <div class="offset-md-1 col-md-3 mb-3">
+                            <div class="btn btn-info-alt d-flex flex-column align-items-center h-100 justify-content-center">
+                              Remove
+                            </div>
                           </div>
-                        </form>
+                        </div>
+                        <div class="d-flex flex-row">
+                          <div class="col-md-8 card p-3 d-flex flex-row notif-card">
+                            <div class="col-md-6">
+                              <span class="">
+                                JOHN12@email.com
+                              </span>
+                            </div>
+                            <div class="col-md-6 text-right">
+                              <span>
+                                APPROVED
+                              </span>
+                            </div>
+                          </div>
+                          <div class="offset-md-1 col-md-3 mb-3">
+                            <div class="btn btn-info-alt d-flex flex-column align-items-center h-100 justify-content-center">
+                              Confirm
+                            </div>
+                          </div>
+                        </div>
+
+                        
+                      
+                     
+                      <div class="card p-3 d-flex flex-row notif-card">
+                        <div class="col-md-6 d-flex flex-column">
+                          <span class="">
+                            JANE223@mail.com
+                          </span>
+                          <span class="">
+                            #23132
+                          </span>
+                        </div>
+                        <div class="col-md-6 d-flex flex-column align-items-end">
+                          <span class="">
+                            Reviewing in progress
+                          </span>
+                          <a class="" href="">
+                            Remove
+                          </a>
+                        </div>
                       </div>
                       
-  
-              </div>
-             
-
-
+                      <div class="card p-3 d-flex flex-row notif-card">
+                        <div class="col-md-6 d-flex flex-column">
+                          <span class="">
+                            JANE123@mail.com
+                          </span>
+                          <span class="">
+                            #23123
+                          </span>
+                        </div>
+                        <div class="col-md-6 d-flex flex-column align-items-end">
+                          <span class="">
+                            Reviewed
+                          </span>
+                          <a class="" href="">
+                            Remove
+                          </a>
+                        </div>
+                      </div>
+        
+                    </div>
+                  </div>
+                </div>
             </div>
-            <!-- Content End-->
-           
+            </div>
+            <!-- Tap Forms End-->
           </div>
           <!-- Row -->
         </div>
@@ -281,14 +404,9 @@
     <script src="package/assets/extra-libs/sparkline/sparkline.js"></script>
     <!--Wave Effects -->
     <script src="package/dist/js/waves.js"></script>
-    <!--Menu sidebar -->
-    <script src="package/dist/js/sidebarmenu.js"></script>
     <!--Custom JavaScript -->
     <script src="package/dist/js/feather.min.js"></script>
     <script src="package/dist/js/custom.min.js"></script>
-    <!--This page JavaScript -->
-    <script src="package/assets/libs/apexcharts/dist/apexcharts.min.js"></script>
-    <script src="package/dist/js/pages/dashboards/dashboard1.js"></script>
 </body>
 
 </html>

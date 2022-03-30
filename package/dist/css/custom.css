@@ -246,3 +246,12 @@ a:hover,
     text-align: center;
     justify-content: center;
 }
+.select2.form-control:disabled, .form-control:read-only {
+    background: transparent !important;
+    border: none;
+    text-align: end;
+    padding:0;
+}
+.form-header option {
+    color: #021E20;
+}

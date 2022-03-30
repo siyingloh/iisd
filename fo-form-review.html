@@ -7,7 +7,7 @@
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>IISD View Reviewers</title>
+  <title>IISD Form Reviewing</title>
 
   <!-- Favicon icon -->
   <link rel="icon" type="image/png" sizes="16x16" href="package/assets/images/favicon.png" />
@@ -28,7 +28,7 @@
       <header class="topbar">
         <nav class="container navbar top-navbar navbar-expand-md navbar-dark">
             <!-- Logo -->
-            <a class="navbar-brand" href="fo-dashboard.html">
+            <a class="navbar-brand" href="index.html">
               <!-- Logo icon -->
               <b class="logo-icon">
                 <!-- Dark Logo icon -->
@@ -47,7 +47,7 @@
             <ul class="navbar-nav">
               <!-- Notification -->
               <li class="nav-item dropdown">
-                <a class="nav-link waves-effect waves-dark" href="fo-notification.html">
+                <a class="nav-link waves-effect waves-dark">
                   <i class="mdi mdi-message"></i>
                   <div class="notify">
                     <span class="heartbit"></span> <span class="point"></span>
@@ -57,7 +57,7 @@
               <!-- End Notification -->
               <!-- Profile -->
               <li class="nav-item">
-                <a class="nav-link waves-effect waves-dark" href="fo-account.html">
+                <a class="nav-link waves-effect waves-dark">
                   <i class="fa fa-user"></i>
                 </a>
               </li>
@@ -67,292 +67,491 @@
                   LOGOUT
                 </a>
               </li>
-            <li class="nav-item dropdown">
-              <a class="
-                  nav-link
-                  dropdown-toggle
-                  text-muted
-                  waves-effect waves-dark
-                " href="" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="flag-icon flag-icon-us"></i></a>
-              <div class="
-                  dropdown-menu dropdown-menu-end dropdown-menu-animate-up
-                ">
-                <a class="dropdown-item" href="#"><i class="flag-icon flag-icon-in"></i> India</a>
-                <a class="dropdown-item" href="#"><i class="flag-icon flag-icon-fr"></i> French</a>
-                <a class="dropdown-item" href="#"><i class="flag-icon flag-icon-cn"></i> China</a>
-                <a class="dropdown-item" href="#"><i class="flag-icon flag-icon-de"></i> Dutch</a>
-              </div>
-            </li>
+              <li class="nav-item dropdown">
+                <a class="
+                    nav-link
+                    dropdown-toggle
+                    text-muted
+                    waves-effect waves-dark
+                  " href="" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="flag-icon flag-icon-us"></i></a>
+                <div class="
+                    dropdown-menu dropdown-menu-end dropdown-menu-animate-up
+                  ">
+                  <a class="dropdown-item" href="#"><i class="flag-icon flag-icon-in"></i> India</a>
+                  <a class="dropdown-item" href="#"><i class="flag-icon flag-icon-fr"></i> French</a>
+                  <a class="dropdown-item" href="#"><i class="flag-icon flag-icon-cn"></i> China</a>
+                  <a class="dropdown-item" href="#"><i class="flag-icon flag-icon-de"></i> Dutch</a>
+                </div>
+              </li>
             </ul>
           </div>
         </nav>
+ <!-- form sub header start -->
+ <div class="form-pre-header"></div>
+ <div class="form-header">
+   <div class="container">
+     <div class="d-flex flex-row">
+      <div class="col-md-4 d-flex flex-row align-items-center">
+        <a href=""><span>Delete Form</span></a>
+        <!-- <a href=""><span>Instruction</span></a>
+        <a href=""><span>Guideline</span></a> -->
+      </div>
+      <div class="col-md-4 d-flex flex-row justify-content-center align-items-center">
+        <span>FORM 123</span>
+        <span> - </span>
+        <span>Reviewing in Progress</span>
+      </div>
+      <div class="col-md-4 d-flex flex-column align-items-end">
+        <span> Alignment score: </span>
+        <select class="select2 form-control custom-select select2-hidden-accessible" style="width: 100%; height: 36px" data-select2-id="1" tabindex="-1" aria-hidden="true">
+            <option value="fo" data-select2-id="389">Form Owner - xx/xx</option>
+            <option value="REV1" data-select2-id="390">Reviewer 1 - xx/xx</option>
+            <option value="REV2" data-select2-id="390">Reviewer 2 - xx/xx</option>
+        </select>
+     </div>
+   </div>
+ </div>
+ <!-- form subheader end -->
       </header>
-      <!-- -------------------------------------------------------------- -->
       <!-- End Topbar header -->
+      <!-- Left Sidebar -->
+      <aside class="left-sidebar">
+        <!-- Sidebar scroll-->
+        <div class="scroll-sidebar">
+          
+          <!-- Sidebar navigation-->
+          <nav class="sidebar-nav">
+            <ul id="sidebarnav">
+              <li class="sidebar-item">
+                <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false"><span class="hide-menu">Food & Nutrition Security</span></a>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false"><span class="hide-menu">Economic Development</span></a>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false"><span class="hide-menu">Contact</span></a>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#test" aria-expanded="false"><span class="hide-menu">Invoice</span></a>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#test2" aria-expanded="false"><span class="hide-menu">Notes</span></a>
+              </li>
+              <li class="sidebar-item">
+                <a
+                  class="sidebar-link waves-effect waves-dark sidebar-link" href="" aria-expanded="false"><span class="hide-menu">Todo</span></a>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false"><span class="hide-menu">Taskboard</span></a>
+              </li>
+            </ul>
+          </nav>
+          <!-- End Sidebar navigation -->
+        </div>
+        <!-- End Sidebar scroll-->
+      </aside>
       <!-- -------------------------------------------------------------- -->
-      
+      <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+      <!-- -------------------------------------------------------------- -->
       <!-- Page wrapper  -->
-      <div class="main-wrapper">
-        
+      <div class="main-wrapper position-relative">
+      <div class="page-wrapper">
         <!-- -------------------------------------------------------------- -->
         <!-- Container fluid  -->
         <!-- -------------------------------------------------------------- -->
-        <div class="container-fluid nav-offset">
-          
-        <div class="container ">
-          <!-- Row -->
-          <div class="row">
-            <div class="mt-3 mb-5 d-flex justify-content-between">
-              <div class="col-md-6">
-                <h1>REVIEWERS</h1>
-              </div>
-              <div class="col-md-6 d-flex justify-content-end">
+        <div class="container-fluid ">
+          <div class="form-card card nav-offset py-5">
+
+            <!-- Tab Form Starts-->
+              <!-- Nav tabs -->
+           <ul class="nav nav-tabs form-tabs" role="tablist">
+               <li class="nav-item">
+                   <a class="nav-link active" data-bs-toggle="tab" href="#1-1" role="tab">
+                       <span>1.1</span>
+                   </a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link" data-bs-toggle="tab" href="#1-2" role="tab">
+                       <span>1.2</span>
+                   </a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link" data-bs-toggle="tab" href="#1-3" role="tab">
+                       <span>1.3</span>
+                   </a>
+               </li>
+           </ul>
+           <!-- Tab panes -->
+           <div class="tab-content form-content">
+               <div class="tab-pane active" id="1-1" role="tabpanel">
+                   <div class="px-3 pt-5 pb-3">
+                        <!-- Row -->
+                      <div class="row p-3">
+                        <!-- Form Content start -->
+                        <div class="col-md-6">
+                          <div class="d-flex flex-row">
+                          <span class="px-3">1.1</span>
+                          <div class="d-flex flex-column">
+                            <p>
+                              Developing shared approaches to FAF investment promotion and facilitation, sharing information on investments requiring cross-ASEAN financing and expertise, discouraging ‘race to the bottom’ investment promotion practices and encouraging a ‘race to the top’ in investment promotion practices.																		
+                             </p><a href="" target="_blank">
+                              Guideline
+                            </a>
+                            <a href="" target="_blank">
+                              Instructions
+                            </a>
+                            </div> 
+
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-floating mb-3">
+                            <div>REF</div>
+                            <input type="text" class="form-control" id="ref_1_1" placeholder="" disabled>
+                          </div>
+                          <div>Description /excerpt and hyperlink</div>
+                          <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="des_1_1" placeholder="" disabled>
+                          </div>
+                          <div class="mb-3 d-flex flex-row alignment-rating">
+                            <div class="form-check pr-3">
+                              <input type="radio" id="fa_1_1" name="1-1" class="form-check-input" value="fa-1-1" disabled>
+                              <label class="form-check-label" for="fa_1_1">FA</label>
+                            </div>
+                            <div class="form-check">
+                              <input type="radio" id="pa_1_1" name="1-1" class="form-check-input" value="pa-1-1" disabled>
+                              <label class="form-check-label" for="pa_1_1">PA</label>
+                            </div>
+                            <div class="form-check">
+                              <input type="radio" id="na_1_1" name="1-1" class="form-check-input" value="na-1-1" disabled>
+                              <label class="form-check-label" for="na_1_1">NA</label>
+                            </div>
+                          </div>
+                          <!-- Scoring for PA -->
+                          <div class="mb-3 d-flex flex-row pa-rating pa-1-1 hide">
+                            <div class="form-check pr-3">
+                              <input type="radio" id="pa_1_1_1" name="pa-1-1" class="form-check-input" value="pa-1-1-1">
+                              <label class="form-check-label" for="pa_1_1_1">1</label>
+                            </div>
+                            <div class="form-check">
+                              <input type="radio" id="pa_1_1_2" name="pa-1-1" class="form-check-input" value="pa-1-1-2">
+                              <label class="form-check-label" for="pa_1_1_2">2</label>
+                            </div>
+                            <div class="form-check">
+                              <input type="radio" id="na_1_1_3" name="pa-1-1" class="form-check-input" value="pa-1-1-3">
+                              <label class="form-check-label" for="na_1_1_3">3</label>
+                            </div>
+                            <div class="form-check">
+                              <input type="radio" id="na_1_1_4" name="pa-1-1" class="form-check-input" value="pa-1-1-4">
+                              <label class="form-check-label" for="na_1_1_4">4</label>
+                            </div>
+                          </div>
+                          <!-- Scoring for PA End -->
+                          
+                        </div>
+
+                      </div>
+                      <!-- Row -->
+                      <div id="accordian-part" class="reviewer-accordion">
+                        <div id="accordion-1">
+                          <!--CARD-->
+                          <div class="card mb-0">
+                            <a href="#" class="link collapsed" id="heading1" data-bs-toggle="collapse" data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                              <div class="card-header py-3">
+                                <h5 class="mb-0">
+                                  Reviewer 1
+                                </h5>
+                              </div>
+                            </a>
+                            <!--COLLAPSE-->
+                            <div id="collapse11" class="collapse" aria-labelledby="heading1" data-parent="#accordion-1">
+                              <!-- Row -->
+                              <div class="row p-3">
+                                <!-- Form Content start -->
+                                <div class="col-md-6">
+                                </div>
+                                <div class="col-md-6">
+                                  <div>Justification/ Comment</div>
+                                  <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="des_1_1" placeholder="" disabled>
+                                  </div>
+                                  <div class="mb-3 d-flex flex-row alignment-rating">
+                                    <div class="form-check pr-3">
+                                      <input type="radio" id="fa_1_1" name="1-1" class="form-check-input" value="fa-1-1" disabled>
+                                      <label class="form-check-label" for="fa_1_1">FA</label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input type="radio" id="pa_1_1" name="1-1" class="form-check-input" value="pa-1-1" disabled>
+                                      <label class="form-check-label" for="pa_1_1">PA</label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input type="radio" id="na_1_1" name="1-1" class="form-check-input" value="na-1-1" disabled>
+                                      <label class="form-check-label" for="na_1_1">NA</label>
+                                    </div>
+                                  </div>
+                                  <!-- Scoring for PA -->
+                                  <div class="mb-3 d-flex flex-row pa-rating pa-1-1 hide">
+                                    <div class="form-check pr-3">
+                                      <input type="radio" id="pa_1_1_1" name="pa-1-1" class="form-check-input" value="pa-1-1-1">
+                                      <label class="form-check-label" for="pa_1_1_1">1</label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input type="radio" id="pa_1_1_2" name="pa-1-1" class="form-check-input" value="pa-1-1-2">
+                                      <label class="form-check-label" for="pa_1_1_2">2</label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input type="radio" id="na_1_1_3" name="pa-1-1" class="form-check-input" value="pa-1-1-3">
+                                      <label class="form-check-label" for="na_1_1_3">3</label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input type="radio" id="na_1_1_4" name="pa-1-1" class="form-check-input" value="pa-1-1-4">
+                                      <label class="form-check-label" for="na_1_1_4">4</label>
+                                    </div>
+                                  </div>
+                                  <!-- Scoring for PA End -->
+                                  
+                                </div>
+
+                              </div>
+                               <!-- Row -->
+                            </div>
+                            <!--End of Collapse-->
+                          </div>
+                          <!-- End of Card-->
+                          <!-- Card -->
+                          <div class="card mb-0">
+                            <a href="#" class="link collapsed" id="heading2" data-bs-toggle="collapse" data-bs-target="#collapse22" aria-expanded="false" aria-controls="collapse22">
+                              <div class="card-header py-3">
+                                <h5 class="mb-0">
+                                    Reviewer 2
+                                </h5>
+                              </div>
+                            </a>
+                            <!-- Collapse -->
+                            <div id="collapse22" class="collapse" aria-labelledby="heading2" data-parent="#accordion-1" >
+                             <!-- Row -->
+                              <div class="row p-3">
+                                <!-- Form Content start -->
+                                <div class="col-md-6">
+                                  
+                                </div>
+                                <div class="col-md-6">
+                                  <div>Justification/ Comment</div>
+                                  <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="des_1_1" placeholder="" disabled>
+                                  </div>
+                                  <div class="mb-3 d-flex flex-row alignment-rating">
+                                    <div class="form-check pr-3">
+                                      <input type="radio" id="fa_1_1" name="1-1" class="form-check-input" value="fa-1-1" disabled>
+                                      <label class="form-check-label" for="fa_1_1">FA</label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input type="radio" id="pa_1_1" name="1-1" class="form-check-input" value="pa-1-1" disabled>
+                                      <label class="form-check-label" for="pa_1_1">PA</label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input type="radio" id="na_1_1" name="1-1" class="form-check-input" value="na-1-1" disabled>
+                                      <label class="form-check-label" for="na_1_1">NA</label>
+                                    </div>
+                                  </div>
+                                  <!-- Scoring for PA -->
+                                  <div class="mb-3 d-flex flex-row pa-rating pa-1-1 hide">
+                                    <div class="form-check pr-3">
+                                      <input type="radio" id="pa_1_1_1" name="pa-1-1" class="form-check-input" value="pa-1-1-1">
+                                      <label class="form-check-label" for="pa_1_1_1">1</label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input type="radio" id="pa_1_1_2" name="pa-1-1" class="form-check-input" value="pa-1-1-2">
+                                      <label class="form-check-label" for="pa_1_1_2">2</label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input type="radio" id="na_1_1_3" name="pa-1-1" class="form-check-input" value="pa-1-1-3">
+                                      <label class="form-check-label" for="na_1_1_3">3</label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input type="radio" id="na_1_1_4" name="pa-1-1" class="form-check-input" value="pa-1-1-4">
+                                      <label class="form-check-label" for="na_1_1_4">4</label>
+                                    </div>
+                                  </div>
+                                  <!-- Scoring for PA End -->
+                                  
+                                </div>
+
+                              </div>
+                              <!-- Row -->
+                            </div>
+                            <!-- End of COllapse -->
+                          </div>
+                          <!-- End of card -->
+                          <!-- card -->
+                          <div class="card mb-0">                                
+                            <a href="#" class="collapsed link" id="heading3" data-bs-toggle="collapse" data-bs-target="#collapse33" aria-expanded="false" aria-controls="collapse33">
+                              <div class="card-header py-3">
+                                <h5 class="mb-0">
+                                    Reviewer 3
+                                </h5>
+                              </div>
+                            </a>
+                          <div id="collapse33" class="collapse" aria-labelledby="heading3" data-parent="#accordion-1">
+                          <!-- Row -->
+                                <div class="row p-3">
+                                <!-- Form Content start -->
+                                <div class="col-md-6"> 
+                                </div>
+                                <div class="col-md-6">
+                                  <div>Justification/ Comment</div>
+                                  <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="des_1_1" placeholder="" disabled>
+                                  </div>
+                                  <div class="mb-3 d-flex flex-row alignment-rating">
+                                    <div class="form-check pr-3">
+                                      <input type="radio" id="fa_1_1" name="1-1" class="form-check-input" value="fa-1-1" disabled>
+                                      <label class="form-check-label" for="fa_1_1">FA</label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input type="radio" id="pa_1_1" name="1-1" class="form-check-input" value="pa-1-1" disabled>
+                                      <label class="form-check-label" for="pa_1_1">PA</label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input type="radio" id="na_1_1" name="1-1" class="form-check-input" value="na-1-1" disabled>
+                                      <label class="form-check-label" for="na_1_1">NA</label>
+                                    </div>
+                                  </div>
+                                  <!-- Scoring for PA -->
+                                  <div class="mb-3 d-flex flex-row pa-rating pa-1-1 hide">
+                                    <div class="form-check pr-3">
+                                      <input type="radio" id="pa_1_1_1" name="pa-1-1" class="form-check-input" value="pa-1-1-1">
+                                      <label class="form-check-label" for="pa_1_1_1">1</label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input type="radio" id="pa_1_1_2" name="pa-1-1" class="form-check-input" value="pa-1-1-2">
+                                      <label class="form-check-label" for="pa_1_1_2">2</label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input type="radio" id="na_1_1_3" name="pa-1-1" class="form-check-input" value="pa-1-1-3">
+                                      <label class="form-check-label" for="na_1_1_3">3</label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input type="radio" id="na_1_1_4" name="pa-1-1" class="form-check-input" value="pa-1-1-4">
+                                      <label class="form-check-label" for="na_1_1_4">4</label>
+                                    </div>
+                                  </div>
+                                  <!-- Scoring for PA End -->
+                                  
+                                </div>
+
+                              </div>
+                              <!-- Row -->
+                            </div>
+                          </div>
+                          <!-- end card-->
+                           <!-- card -->
+                           <div class="card mb-0">                                
+                            <a href="#" class="collapsed link" id="heading4" data-bs-toggle="collapse" data-bs-target="#collapse44" aria-expanded="false" aria-controls="collapse44">
+                              <div class="card-header py-3">
+                                <h5 class="mb-0">
+                                    Validation
+                                </h5>
+                              </div>
+                            </a>
+                          <div id="collapse44" class="collapse show" aria-labelledby="heading4" data-parent="#accordion-1">
+                          <!-- Row -->
+                                <div class="row p-3">
+                                <!-- Form Content start -->
+                                <div class="col-md-6"> 
+                                </div>
+                                <div class="col-md-6">
+                                  <div>Justification/ Comment</div>
+                                  <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="des_1_1" placeholder="" >
+                                  </div>
+                                  <div class="mb-3 d-flex flex-row alignment-rating">
+                                    <div class="form-check pr-3">
+                                      <input type="radio" id="fa_1_1" name="1-1" class="form-check-input" value="fa-1-1" >
+                                      <label class="form-check-label" for="fa_1_1">FA</label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input type="radio" id="pa_1_1" name="1-1" class="form-check-input" value="pa-1-1" >
+                                      <label class="form-check-label" for="pa_1_1">PA</label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input type="radio" id="na_1_1" name="1-1" class="form-check-input" value="na-1-1" >
+                                      <label class="form-check-label" for="na_1_1">NA</label>
+                                    </div>
+                                  </div>
+                                  <!-- Scoring for PA -->
+                                  <div class="mb-3 d-flex flex-row pa-rating pa-1-1 hide">
+                                    <div class="form-check pr-3">
+                                      <input type="radio" id="pa_1_1_1" name="pa-1-1" class="form-check-input" value="pa-1-1-1">
+                                      <label class="form-check-label" for="pa_1_1_1">1</label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input type="radio" id="pa_1_1_2" name="pa-1-1" class="form-check-input" value="pa-1-1-2">
+                                      <label class="form-check-label" for="pa_1_1_2">2</label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input type="radio" id="na_1_1_3" name="pa-1-1" class="form-check-input" value="pa-1-1-3">
+                                      <label class="form-check-label" for="na_1_1_3">3</label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input type="radio" id="na_1_1_4" name="pa-1-1" class="form-check-input" value="pa-1-1-4">
+                                      <label class="form-check-label" for="na_1_1_4">4</label>
+                                    </div>
+                                  </div>
+                                  <!-- Scoring for PA End -->
+                                  
+                                </div>
+
+                              </div>
+                              <!-- Row -->
+                            </div>
+                          </div>
+                          <!-- end card-->
+                        </div>
+                      </div>
+                   </div>
+               </div>
+               <div class="tab-pane" id="1-2" role="tabpanel">
+                 <div class="px-3 pt-5 pb-3">
+                   
+                 </div>
+               </div>
+               <div class="tab-pane" id="1-3" role="tabpanel">
+                 <div class="px-3 py-5">
+                   <p>There are currently no forms in this tab</p>
+                 </div>
+               </div>
+              
+
+                 
+             </div>
+           </div>
+           <!-- Tap Forms End-->
+           
+
+            
+
+            <!-- SAVE AND SUBMIT PROMPT -->
+            <div class="d-flex flex-row justify-content-end mt-5">
+              <div class="d-flex justify-content-end px-3">
                 <a href="fo-form-draft.html" class="btn btn-info-alt d-flex align-items-center">
-                  Back
+                  Save
+                </a>
+              </div>
+              <div class="d-flex justify-content-end px-3">
+                <a href="fo-form-draft.html" class="btn btn-info d-flex align-items-center">
+                  Submit
                 </a>
               </div>
             </div>
-            <!-- Tab Form Starts-->
-            <div class="p-3">
-               <!-- Nav tabs -->
-            <ul class="nav nav-tabs" role="tablist">
-                <li class="nav-item">
-                    <a class="nav-link active" data-bs-toggle="tab" href="#draft" role="tab">
-                        <span>Add Reviewer</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-bs-toggle="tab" href="#review" role="tab">
-                        <span>Reviewer Status</span>
-                    </a>
-                </li>
-            </ul>
-            <!-- Tab panes -->
-            <div class="tab-content">
-                <div class="tab-pane active" id="draft" role="tabpanel">
-                    <div class="px-5 pt-5 pb-3 row">
-                      <form class="col-md-9 mx-auto form-horizontal" action="index.html">
-                      <!-- Field -->
-                      <div class="row">
-                        <div class="col-md-3">
-                          <label class="control-label col-form-label">Email</label>
-                        </div>
-                        <div class="col-md-9">
-                          <div class="form-floating mb-3">
-                            <input
-                              type="email"
-                              class="form-control form-input-bg"
-                              id="tb-name"
-                              placeholder=""
-                              required
-                            />
-                            <div class="invalid-feedback">Email is required</div>
-                        </div>                
-                        </div>
-                      </div>
-                      <!-- End Field-->
-                      <!-- Field -->
-                      <div class="row">
-                        <div class="col-md-3">
-                          <label class="control-label col-form-label">Full Name</label>
-                        </div>
-                        <div class="col-md-9">
-                          <div class="form-floating mb-3">
-                            <input
-                              type="text"
-                              class="form-control form-input-bg"
-                              id="tb-name"
-                              placeholder=""
-                              required
-                            />
-                            <div class="invalid-feedback">Full Name is required</div>
-                        </div>                
-                        </div>
-                      </div>
-                      <!-- End Field-->
-                      <!-- Field -->
-                      <div class="row">
-                        <div class="col-md-3">
-                          <label class="control-label col-form-label">Country</label>
-                        </div>
-                        <div class="col-md-9">
-                          <div class="form-floating mb-3">
-                            <input
-                              type="text"
-                              class="form-control form-input-bg"
-                              id="tb-country"
-                              placeholder=""
-                              required
-                            />
-                            <div class="invalid-feedback">Country is required</div>
-                        </div>                
-                        </div>
-                      </div>
-                      <!-- End Field-->
-                      <!-- Field -->
-                      <div class="row">
-                        <div class="col-md-3">
-                          <label class="control-label col-form-label">Country</label>
-                        </div>
-                        <div class="col-md-9">
-                          <div class="form-floating mb-3">
-                            <input
-                              type="text"
-                              class="form-control form-input-bg"
-                              id="tb-country"
-                              placeholder=""
-                              required
-                            />
-                            <div class="invalid-feedback">Country is required</div>
-                        </div>                
-                        </div>
-                      </div>
-                      <!-- End Field-->
-                      <!-- Field -->
-                      <div class="row">
-                        <div class="col-md-3">
-                          <label class="control-label col-form-label">Organization Name</label>
-                        </div>
-                        <div class="col-md-9">
-                          <div class="form-floating mb-3">
-                            <input
-                              type="text"
-                              class="form-control form-input-bg"
-                              id="tb-organization"
-                              placeholder=""
-                              required
-                            />
-                            <div class="invalid-feedback">Organization Name is required</div>
-                        </div>                
-                        </div>
-                      </div>
-                      <!-- End Field-->
-                      <!-- Field -->
-                      <div class="row">
-                        <div class="col-md-3">
-                          <label class="control-label col-form-label">Job Title</label>
-                        </div>
-                        <div class="col-md-9">
-                          <div class="form-floating mb-3">
-                            <input
-                              type="text"
-                              class="form-control form-input-bg"
-                              id="tb-jobtitle"
-                              placeholder=""
-                              required
-                            />
-                            <div class="invalid-feedback">Job Title is required</div>
-                        </div>                
-                        </div>
-                      </div>
-                      <!-- End Field-->
-                      
-                      
-                      
-                      <div class="d-flex align-items-stretch justify-content-end">
-                        <button type="submit" class="btn btn-info d-block">
-                          Add User
-                        </button>
-                      </div>
-                    </form>
-                    </div>
-                </div>
-                <div class="tab-pane" id="review" role="tabpanel">
-                  <div class="px-3 pt-5 pb-3">
-                    
-                        <div class="d-flex flex-row">
-                          <div class="col-md-8 card p-3 d-flex flex-row notif-card">
-                            <div class="col-md-6">
-                              <span class="">
-                                JOHN12@email.com
-                              </span>
-                            </div>
-                            <div class="col-md-6 text-right">
-                              <span>
-                                REQUESTED
-                              </span>
-                            </div>
-                          </div>
-                          <div class="offset-md-1 col-md-3 mb-3">
-                            <div class="btn btn-info-alt d-flex flex-column align-items-center h-100 justify-content-center">
-                              Remove
-                            </div>
-                          </div>
-                        </div>
-                        <div class="d-flex flex-row">
-                          <div class="col-md-8 card p-3 d-flex flex-row notif-card">
-                            <div class="col-md-6">
-                              <span class="">
-                                JOHN12@email.com
-                              </span>
-                            </div>
-                            <div class="col-md-6 text-right">
-                              <span>
-                                APPROVED
-                              </span>
-                            </div>
-                          </div>
-                          <div class="offset-md-1 col-md-3 mb-3">
-                            <div class="btn btn-info-alt d-flex flex-column align-items-center h-100 justify-content-center">
-                              Confirm
-                            </div>
-                          </div>
-                        </div>
-
-                        
-                      
-                     
-                      <div class="card p-3 d-flex flex-row notif-card">
-                        <div class="col-md-6 d-flex flex-column">
-                          <span class="">
-                            JANE223@mail.com
-                          </span>
-                          <span class="">
-                            #23132
-                          </span>
-                        </div>
-                        <div class="col-md-6 d-flex flex-column align-items-end">
-                          <span class="">
-                            Reviewing in progress
-                          </span>
-                          <a class="" href="">
-                            Remove
-                          </a>
-                        </div>
-                      </div>
-                      
-                      <div class="card p-3 d-flex flex-row notif-card">
-                        <div class="col-md-6 d-flex flex-column">
-                          <span class="">
-                            JANE123@mail.com
-                          </span>
-                          <span class="">
-                            #23123
-                          </span>
-                        </div>
-                        <div class="col-md-6 d-flex flex-column align-items-end">
-                          <span class="">
-                            Reviewed
-                          </span>
-                          <a class="" href="">
-                            Remove
-                          </a>
-                        </div>
-                      </div>
-        
-                    </div>
-                  </div>
-                </div>
-            </div>
-            </div>
-            <!-- Tap Forms End-->
+            <!-- SAVE AND SUBMIT PROMPT END -->
           </div>
-          <!-- Row -->
-        </div>
         </div>
         <!-- End Container fluid  -->
         
+      </div>
+
       </div>
       <!-- -------------------------------------------------------------- -->
       <!-- End Page wrapper  -->
@@ -391,7 +590,7 @@
           LogoBg: "skin2", // You can change the Value to be skin1/skin2/skin3/skin4/skin5/skin6
          // NavbarBg: "skin2", // You can change the Value to be skin1/skin2/skin3/skin4/skin5/skin6
           SidebarType: "full", // You can change it full / mini-sidebar / iconbar / overlay
-          SidebarColor: "skin2", // You can change the Value to be skin1/skin2/skin3/skin4/skin5/skin6
+          SidebarColor: "skin6", // You can change the Value to be skin1/skin2/skin3/skin4/skin5/skin6
           SidebarPosition: true, // it can be true / false ( true means Fixed and false means absolute )
           HeaderPosition: true, // it can be true / false ( true means Fixed and false means absolute )
           BoxedLayout: false, // it can be true / false ( true means Boxed and false means Fluid )
@@ -404,9 +603,27 @@
     <script src="package/assets/extra-libs/sparkline/sparkline.js"></script>
     <!--Wave Effects -->
     <script src="package/dist/js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="package/dist/js/sidebarmenu.js"></script>
     <!--Custom JavaScript -->
     <script src="package/dist/js/feather.min.js"></script>
     <script src="package/dist/js/custom.min.js"></script>
+<script>
+  
+$('input[type="radio"]').click(function(){
+  if ($('input[name=1-1]:checked').val() == "pa-1-1") {
+      $(".pa-1-1").removeClass("hide");
+  }
+  else
+    $(".pa-1-1").addClass("hide");
+    if ($('input[name=1-2]:checked').val() == "pa-1-2") {
+      $(".pa-1-2").removeClass("hide");
+    }
+  else
+    $(".pa-1-2").addClass("hide");
+       
+});
+</script>
 </body>
 
 </html>
