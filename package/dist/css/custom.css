@@ -252,6 +252,11 @@ a:hover,
     text-align: end;
     padding:0;
 }
+.select2.form-control:disabled.role, .form-control:read-only {
+    border: 1px solid #ccc;
+    text-align: start;
+    padding: 4px;
+}
 .form-header option {
     color: #021E20;
 }
