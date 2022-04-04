@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>IISD Admin Home</title>
+
+  <!-- Favicon icon -->
+  <link rel="icon" type="image/png" sizes="16x16" href="package/assets/images/favicon.png" />
+  <!-- Custom CSS -->
+  <link href="package/dist/css/style.min.css" rel="stylesheet" />
+  <link href="package/dist/css/custom.css" rel="stylesheet" />
+</head>
+
+<body class="admin-page">
+  <div class="main-wrapper">
+    <!-- Preloader -->
+    <div class="preloader">
+    </div>
+    <!-- Preloader End -->
+    <!-- Main wrapper -->
+    <div id="main-wrapper">
+      <!-- Topbar header - style you can find in pages.scss -->
+      <header class="topbar">
+        <nav class="container navbar top-navbar navbar-expand-md navbar-dark">
+            <!-- Logo -->
+            <a class="navbar-brand" href="fo-dashboard.html">
+              <!-- Logo icon -->
+              <b class="logo-icon">
+                <!-- Dark Logo icon -->
+                <img src="package/assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
+              </b>
+              <!--End Logo icon -->
+              <!-- Logo text -->
+              <span class="logo-text">
+                <!-- dark Logo text -->
+                <img src="package/assets/images/logo-text.png" alt="homepage" class="dark-logo" />
+              </span>
+            </a>
+            <!-- End Logo -->
+          <div class="d-flex justify-content-end w-100" id="navbarSupportedContent">
+            <!-- Right side toggle and nav items -->
+            <ul class="navbar-nav">
+              <!-- Notification -->
+              <li class="nav-item dropdown">
+                <a class="nav-link waves-effect waves-dark" href="fo-notification.html">
+                  <i class="mdi mdi-message"></i>
+                  <div class="notify">
+                    <span class="heartbit"></span> <span class="point"></span>
+                  </div>
+                </a>
+              </li>
+              <!-- End Notification -->
+              <!-- Profile -->
+              <li class="nav-item">
+                <a class="nav-link waves-effect waves-dark" href="fo-account.html">
+                  <i class="fa fa-user"></i>
+                </a>
+              </li>
+              <!-- Logout -->
+              <li class="nav-item">
+                <a class="nav-link pl-5" href="#">
+                  LOGOUT
+                </a>
+              </li>
+            <li class="nav-item dropdown">
+              <a class="
+                  nav-link
+                  dropdown-toggle
+                  text-muted
+                  waves-effect waves-dark
+                " href="" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="flag-icon flag-icon-us"></i></a>
+              <div class="
+                  dropdown-menu dropdown-menu-end dropdown-menu-animate-up
+                ">
+                <a class="dropdown-item" href="#"><i class="flag-icon flag-icon-in"></i> India</a>
+                <a class="dropdown-item" href="#"><i class="flag-icon flag-icon-fr"></i> French</a>
+                <a class="dropdown-item" href="#"><i class="flag-icon flag-icon-cn"></i> China</a>
+                <a class="dropdown-item" href="#"><i class="flag-icon flag-icon-de"></i> Dutch</a>
+              </div>
+            </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!-- End Topbar header -->
+      <!-- Left Sidebar -->
+      <aside class="left-sidebar">
+        <!-- Sidebar scroll-->
+        <div class="scroll-sidebar">
+          
+          <!-- Sidebar navigation-->
+          <nav class="sidebar-nav">
+            <ul id="sidebarnav">
+              <li class="sidebar-item">
+                <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false"><span class="hide-menu">Users</span></a>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false"><span class="hide-menu">Forms</span></a>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false"><span class="hide-menu">Staff</span></a>
+              </li>
+            </ul>
+          </nav>
+          <!-- End Sidebar navigation -->
+        </div>
+        <!-- End Sidebar scroll-->
+      </aside>
+      <!-- -------------------------------------------------------------- -->
+      <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+      <!-- -------------------------------------------------------------- -->
+      <!-- Page wrapper  -->
+      <div class="main-wrapper position-relative">
+      <div class="page-wrapper">
+        <!-- -------------------------------------------------------------- -->
+        <!-- Container fluid  -->
+        <!-- -------------------------------------------------------------- -->
+        <div class="container-fluid ">
+          <div>
+            <div class="mt-3 d-flex justify-content-between">
+              <div class="col-md-9">
+                <h1>FORM <span id="form_id">123</span>
+                </h1>
+              </div>
+              <div class="col-md-3 d-flex justify-content-end">
+                <a href="admin-add-user.html" class="btn btn-info-alt d-flex align-items-center mx-3">
+                  Back
+                </a>
+                
+              </div>
+            </div>
+          </div>
+          <div class="card py-5">
+
+            <!-- Tab Form Starts-->
+              <!-- Nav tabs -->
+           <ul class="nav nav-tabs form-tabs" role="tablist">
+               <li class="nav-item">
+                   <a class="nav-link active" data-bs-toggle="tab" href="#reviewer-add" role="tab">
+                       <span>Add Reviewer</span>
+                   </a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link" data-bs-toggle="tab" href="#reviewer-stat" role="tab">
+                       <span>Reviewer Status</span>
+                   </a>
+               </li>
+           </ul>
+           <!-- Tab panes -->
+           <div class="tab-content form-content">
+               <div class="tab-pane active" id="reviewer-add" role="tabpanel">
+                <div class="px-3 pt-5 pb-3">
+                    <!-- Row -->
+                  <div class="row p-3">
+                    <div class="my-3 d-flex justify-content-between flex-wrap">
+    
+                      <div class="offset-md-9 col-md-3 d-flex justify-content-end mb-3">
+                        <a href="" class="btn btn-info-alt d-flex align-items-center mx-3 w-200 input-btn">
+                          Create User
+                        </a>
+                        
+                      </div>
+                      <div class="col-md-9 mb-3">
+                        <div class="form-floating">
+                                <input type="text" class="form-control" placeholder="" id="admin_search_user">
+                                <label for="admin_search_user">Reviewer ID or Email</label>
+                              </div>
+                      </div>
+                      <div class="col-md-3 d-flex justify-content-end mb-3">
+                        <a href="" class="btn btn-info d-flex align-items-center mx-3 w-200 input-btn">
+                          Add
+                        </a>
+                        
+                      </div>
+                    </div>
+                    <div class="d-flex flex-row">
+                      <div class="col-md-9 card p-3 d-flex flex-row">
+                      <div class="col-md-6 d-flex flex-column">
+                          <span >john@email.com</span>
+                      </div>
+                      <div class="col-md-6 d-flex flex-column align-items-end">
+                        <span class="status">
+                          Requested
+                        </span>
+                      </div>
+                    </div>
+                    <div class="col-md-3 d-flex justify-content-end mb-3">
+                      <a href="" class="btn btn-info-alt d-flex align-items-center mx-3 w-200 input-btn">
+                        Approve
+                      </a>
+                    </div>
+                    </div>
+
+                    <div class="d-flex flex-row">
+                      <div class="col-md-9 card p-3 d-flex flex-row">
+                        <div class="col-md-6 d-flex flex-column">
+                            <span >jane@email.edu.gov</span>
+                        </div>
+                        <div class="col-md-6 d-flex flex-column align-items-end">
+                          <span class="status">
+                            Approved
+                          </span>
+                        </div>
+                      </div>
+                    <div class="col-md-3 d-flex justify-content-end mb-3">
+                      <a href="" class="btn btn-info-alt d-flex align-items-center mx-3 w-200 input-btn">
+                        Undo
+                      </a>
+                    </div>
+                    </div>
+                    <div class="d-flex flex-row">
+                      <div class="col-md-9 card p-3 d-flex flex-row">
+                        <div class="col-md-6 d-flex flex-column">
+                            <span >lorem@email.edu.gov</span>
+                        </div>
+                        <div class="col-md-6 d-flex flex-column align-items-end">
+                          <span class="status">
+                            Approved
+                          </span>
+                        </div>
+                      </div>
+                    <div class="col-md-3 d-flex justify-content-end mb-3">
+                      <a href="" class="btn btn-info-alt d-flex align-items-center mx-3 w-200 input-btn">
+                        Undo
+                      </a>
+                    </div>
+                    </div>
+                    
+
+                   
+
+                    
+                  </div>
+                  <!-- Row -->
+                  
+                </div>
+               </div>
+
+               <div class="tab-pane" id="reviewer-stat" role="tabpanel">
+                  <div class="px-3 pt-5 pb-3">
+
+                    <div class="card p-3 d-flex flex-row">
+                      <div class="col-md-6 d-flex flex-column">
+                          <span >JOHN DOE</span>
+                          <span>#1211</span>
+                      </div>
+                      <div class="col-md-6 d-flex flex-column align-items-end">
+                        <span class="status">
+                          Reviewing in Progress
+                        </span>
+                          <span>john@gmail.com</span>
+                      </div>
+                    </div>
+
+                    <div class="card p-3 d-flex flex-row">
+                      <div class="col-md-6 d-flex flex-column">
+                          <span >Jane Doe</span>
+                          <span>#1212</span>
+                      </div>
+                      <div class="col-md-6 d-flex flex-column align-items-end">
+                        <span class="status">
+                          Reviewed
+                        </span>
+                          <span>jane@gmail.com</span>
+                      </div>
+                    </div>
+
+                    
+                </div>
+                </div>
+
+             </div>
+           </div>
+           <!-- Tab End-->
+           
+          </div>
+        </div>
+        <!-- End Container fluid  -->
+        
+      </div>
+
+      </div>
+      <!-- -------------------------------------------------------------- -->
+      <!-- End Page wrapper  -->
+      <!-- -------------------------------------------------------------- -->
+    </div>
+    <!-- -------------------------------------------------------------- -->
+        <!-- footer -->
+        <!-- -------------------------------------------------------------- -->
+        <footer class="footer">
+          <div class=" container">
+         <div class="d-flex justify-content-between">
+         <span> © IISD International Institute for Sustainable Development. All rights reserved.</span>
+           <span>Designed by SBwebdesign</span>
+         </div>
+          </div>
+       </footer>
+        <!-- End footer -->
+    <!-- End Wrapper -->
+
+    </aside>
+    <!-- -------------------------------------------------------------- -->
+    <!-- All Jquery -->
+    <!-- -------------------------------------------------------------- -->
+    <script src="package/assets/libs/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="package/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- apps -->
+    <script src="package/dist/js/app.min.js"></script>
+    <!-- fixed sidebar and header -->
+    <script>
+      $(function () {
+        "use strict";
+        $("#main-wrapper").AdminSettings({
+          Theme: false, // this can be true or false ( true means dark and false means light ),
+          Layout: "vertical",
+          LogoBg: "skin2", // You can change the Value to be skin1/skin2/skin3/skin4/skin5/skin6
+         // NavbarBg: "skin2", // You can change the Value to be skin1/skin2/skin3/skin4/skin5/skin6
+          SidebarType: "full", // You can change it full / mini-sidebar / iconbar / overlay
+          SidebarColor: "skin6", // You can change the Value to be skin1/skin2/skin3/skin4/skin5/skin6
+          SidebarPosition: true, // it can be true / false ( true means Fixed and false means absolute )
+          HeaderPosition: true, // it can be true / false ( true means Fixed and false means absolute )
+          BoxedLayout: false, // it can be true / false ( true means Boxed and false means Fluid )
+        });
+      });
+    </script>
+    <script src="package/dist/js/app-style-switcher.js"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <script src="package/assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
+    <script src="package/assets/extra-libs/sparkline/sparkline.js"></script>
+    <!--Wave Effects -->
+    <script src="package/dist/js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="package/dist/js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="package/dist/js/feather.min.js"></script>
+    <script src="package/dist/js/custom.min.js"></script>
+<script>
+  
+$('input[type="radio"]').click(function(){
+  if ($('input[name=1-1]:checked').val() == "pa-1-1") {
+      $(".pa-1-1").removeClass("hide");
+  }
+  else
+    $(".pa-1-1").addClass("hide");
+    if ($('input[name=1-2]:checked').val() == "pa-1-2") {
+      $(".pa-1-2").removeClass("hide");
+    }
+  else
+    $(".pa-1-2").addClass("hide");
+       
+});
+</script>
+</body>
+
+</html>
