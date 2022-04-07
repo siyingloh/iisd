@@ -263,3 +263,7 @@ a:hover,
 .input-btn {
     height:58px;
 }
+.bordered-container {
+    border: 1px solid #ccc;
+    padding: 1rem;
+}
