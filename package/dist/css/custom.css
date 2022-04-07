@@ -25,6 +25,14 @@ footer.footer {
     background-color: #051c47;
     border: none;
 }
+.btn-info-white {
+    background-color: #fff;
+    color: #051c47;
+    border: none;
+}
+a.btn-info-white {
+    color: #051c47;
+}
 .btn {
     padding: 0.5rem 3.75rem;
     transition: 300ms ease all;
