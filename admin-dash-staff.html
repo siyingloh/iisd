@@ -7,7 +7,7 @@
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>IISD Admin Add User</title>
+  <title>IISD Admin Dashboard Staff</title>
 
   <!-- Favicon icon -->
   <link rel="icon" type="image/png" sizes="16x16" href="package/assets/images/favicon.png" />
@@ -122,134 +122,103 @@
         <!-- Container fluid  -->
         <!-- -------------------------------------------------------------- -->
         <div class="container-fluid ">
+          <div>
             <div class="mt-3 d-flex justify-content-between">
               <div class="col-md-9">
-                <h1>ADD USER
+                <h1>STAFFS
                 </h1>
               </div>
               <div class="col-md-3 d-flex justify-content-end">
                 <a href="admin-add-user.html" class="btn btn-info-alt d-flex align-items-center mx-3">
-                  Back
+                  Create New
                 </a>
                 
               </div>
             </div>
-
-            <div class="form-card card bg-light my-5 py-3">
-                <!-- Row -->
-                <div class="row p-3">
-                    <div class="col-md-9 mx-auto">
-                        
-                    <form class="form-horizontal" action="index.html">
-                      <div class="d-flex mb-3">
-                        <div class="col-4 col-md-2 d-flex align-items-center">User Role: </div>
-                        <div class="col-4 col-md-2">
-                        <select class="select2 form-control custom-select select2-hidden-accessible role" style="width: 100%; height: 36px" data-select2-id="1" tabindex="-1" aria-hidden="true">
-                            <option value="fo" data-select2-id="389">Form Owner</option>
-                            <option value="REV1" data-select2-id="390">Reviewer</option>
-                            <option value="REV2" data-select2-id="390">Admin</option>
-                        </select>
-
-                        </div>
+            <div class="mt-3 d-flex justify-content-between">
+              <div class="col-md-9">
+                <div class="form-floating">
+                        <input type="text" class="form-control" placeholder="" id="admin_search_user">
+                        <label for="admin_search_user">Search User by Name, Email or ID</label>
                       </div>
-                        <div class="form-floating mb-3">
-                            <input
-                              type="text"
-                              class="form-control form-input-bg"
-                              id="tb-newname"
-                              placeholder=""
-                              required
-                            />
-                            <label for="tb-newname">Ful Name</label>
-                            <div class="invalid-feedback">Full name is required</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                            <div class="form-floating mb-3">
-                          <input
-                            type="email"
-                            class="form-control form-input-bg"
-                            id="tb-newemail"
-                            placeholder=""
-                            required
-                          />
-                          <label for="tb-newemail">Email</label>
-                          <div class="invalid-feedback">Email is required</div>
-                        </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-floating mb-3">
-                            <input
-                              type="number"
-                              class="form-control form-input-bg"
-                              id="tb-newnum"
-                              placeholder=""
-                              required
-                            />
-                            <label for="tb-newnum">Contact</label>
-                            <div class="invalid-feedback">Contact is required</div>
-                        </div>
-                            </div>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <input
-                              type="text"
-                              class="form-control form-input-bg"
-                              id="tb-neworg"
-                              placeholder=""
-                              required
-                            />
-                            <label for="tb-neworg">Organization</label>
-                            <div class="invalid-feedback">Organization is required</div>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <input
-                              type="text"
-                              class="form-control form-input-bg"
-                              id="tb-newtitle"
-                              placeholder=""
-                            />
-                            <label for="tb-newtitle">Job Title</label>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <input
-                              type="text"
-                              class="form-control form-input-bg"
-                              id="tb-newadd1"
-                              placeholder=""
-                              required
-                            />
-                            <label for="tb-newadd1">Address Line 1</label>
-                            <div class="invalid-feedback">Address is required</div>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <input
-                              type="text"
-                              class="form-control form-input-bg"
-                              id="tb-newadd2"
-                              placeholder=""
-                            />
-                            <label for="tb-newadd2">Address Line 2</label>
-                        </div>
-                        
-                        
-                        
-                        <div class="d-flex align-items-stretch justify-content-end">
-                          <button type="submit" class="btn btn-info d-block">
-                            Add User
-                          </button>
-                        </div>
-                      </form>
-                    </div>
-                    
-                </div>
-
+              </div>
+              <div class="col-md-3 d-flex justify-content-end">
+                <a href="" class="btn btn-info d-flex align-items-center mx-3 w-200">
+                  Search
+                </a>
+                
+              </div>
             </div>
-          
-           
+          </div>
+          <div class="form-card card bg-light py-3 my-3">
 
+           
+             <div class="px-3 pt-5 pb-3">
+                    <!-- Row -->
+                  <div class="row p-3">
+                    <div class="card p-3 d-flex flex-row">
+                      <div class="col-md-6 d-flex flex-column">
+                          <span >JOHN DOE</span>
+                          <span>#1200</span>
+                      </div>
+                      <div class="col-md-6 d-flex flex-column align-items-end">
+                        <span>
+                          Form Owner
+                        </span>
+                          <span>john@gmail.com</span>
+                      </div>
+                    </div>
+
+                    <div class="card p-3 d-flex flex-row">
+                      <div class="col-md-6 d-flex flex-column">
+                          <span >JOHN DOE</span>
+                          <span>#1211</span>
+                      </div>
+                      <div class="col-md-6 d-flex flex-column align-items-end">
+                        <span>
+                          Form Owner
+                        </span>
+                          <span>john@gmail.com</span>
+                      </div>
+                    </div>
+
+                    <div class="card p-3 d-flex flex-row">
+                      <div class="col-md-6 d-flex flex-column">
+                          <span >Jane Doe</span>
+                          <span>#1212</span>
+                      </div>
+                      <div class="col-md-6 d-flex flex-column align-items-end">
+                        <span>
+                          Reviewer
+                        </span>
+                          <span>jane@gmail.com</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Row -->
+                  
+
+           </div>
             
           </div>
+
+           <!-- Pagination -->
+        <nav aria-label="...">
+            <ul class="pagination d-flex justify-content-end">
+              <li class="page-item disabled prev">
+                <a class="page-link" href="#" tabindex="-1">Prev</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item active">
+                <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item next">
+                <a class="page-link" href="#">Next</a>
+              </li>
+            </ul>
+          </nav>
+           <!-- End Pagination -->
         </div>
         <!-- End Container fluid  -->
         

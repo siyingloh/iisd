@@ -98,13 +98,13 @@
           <nav class="sidebar-nav">
             <ul id="sidebarnav">
               <li class="sidebar-item">
-                <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false"><span class="hide-menu">Users</span></a>
+                <a class="sidebar-link waves-effect waves-dark sidebar-link" href="/admin-dash-user.html" aria-expanded="false"><span class="hide-menu">Users</span></a>
               </li>
               <li class="sidebar-item">
-                <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false"><span class="hide-menu">Forms</span></a>
+                <a class="sidebar-link waves-effect waves-dark sidebar-link" href="/admin-dash-form.html" aria-expanded="false"><span class="hide-menu">Forms</span></a>
               </li>
               <li class="sidebar-item">
-                <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false"><span class="hide-menu">Staff</span></a>
+                <a class="sidebar-link waves-effect waves-dark sidebar-link" href="/admin-dash-staff.html" aria-expanded="false"><span class="hide-menu">Staff</span></a>
               </li>
             </ul>
           </nav>
@@ -122,163 +122,149 @@
         <!-- Container fluid  -->
         <!-- -------------------------------------------------------------- -->
         <div class="container-fluid ">
-          <div>
-            <div class="mt-3 d-flex justify-content-between">
-              <div class="col-md-9">
-                <h1>FORM <span id="form_id">123</span>
-                </h1>
+          
+          <div class="container ">
+            <!-- Row -->
+            <div class="row">
+              <div class="mt-3 mb-5 d-flex justify-content-between">
+                <div class="col-md-6">
+                  <h1>NOTIFICATION
+                  </h1>
+                </div>
+                <div class="col-md-6 d-flex justify-content-end">
+                  <a href="" class="btn btn-info-alt d-flex align-items-center mx-3">
+                    Mark all as read
+                  </a>
+                  <a href="" class="btn btn-info-alt d-flex align-items-center">
+                    Refresh
+                  </a>
+                </div>
               </div>
-              <div class="col-md-3 d-flex justify-content-end">
-                <a href="admin-add-user.html" class="btn btn-info-alt d-flex align-items-center mx-3">
-                  Back
-                </a>
-                
-              </div>
-            </div>
-          </div>
-          <div class="card py-5">
-
-            <!-- Tab Form Starts-->
-              <!-- Nav tabs -->
-           <ul class="nav nav-tabs form-tabs" role="tablist">
-               <li class="nav-item">
-                   <a class="nav-link active" data-bs-toggle="tab" href="#reviewer-add" role="tab">
-                       <span>Add Reviewer</span>
-                   </a>
-               </li>
-               <li class="nav-item">
-                   <a class="nav-link" data-bs-toggle="tab" href="#reviewer-stat" role="tab">
-                       <span>Reviewer Status</span>
-                   </a>
-               </li>
-           </ul>
-           <!-- Tab panes -->
-           <div class="tab-content form-content">
-               <div class="tab-pane active" id="reviewer-add" role="tabpanel">
-                <div class="px-3 pt-5 pb-3">
-                    <!-- Row -->
-                  <div class="row p-3">
-                    <div class="my-3 d-flex justify-content-between flex-wrap">
-    
-                      <div class="offset-md-9 col-md-3 d-flex justify-content-end mb-3">
-                        <a href="" class="btn btn-info-alt d-flex align-items-center mx-3 w-200 input-btn">
-                          Create User
-                        </a>
-                        
-                      </div>
-                      <div class="col-md-9 mb-3">
-                        <div class="form-floating">
-                                <input type="text" class="form-control" placeholder="" id="admin_search_user">
-                                <label for="admin_search_user">Reviewer ID or Email</label>
-                              </div>
-                      </div>
-                      <div class="col-md-3 d-flex justify-content-end mb-3">
-                        <a href="" class="btn btn-info d-flex align-items-center mx-3 w-200 input-btn">
-                          Add
-                        </a>
-                        
-                      </div>
-                    </div>
-                    <div class="d-flex flex-row">
-                      <div class="col-md-9 card p-3 d-flex flex-row">
-                      <div class="col-md-6 d-flex flex-column">
-                          <span >john@email.com</span>
-                      </div>
-                      <div class="col-md-6 d-flex flex-column align-items-end">
-                        <span class="status">
-                          Requested
-                        </span>
-                      </div>
-                    </div>
-                    <div class="col-md-3 d-flex justify-content-end mb-3">
-                      <a href="" class="btn btn-info-alt d-flex align-items-center mx-3 w-200 input-btn">
-                        Approve
-                      </a>
-                    </div>
-                    </div>
-
-                    <div class="d-flex flex-row">
-                      <div class="col-md-9 card p-3 d-flex flex-row">
-                        <div class="col-md-6 d-flex flex-column">
-                            <span >jane@email.edu.gov</span>
-                        </div>
-                        <div class="col-md-6 d-flex flex-column align-items-end">
-                          <span class="status">
-                            Approved
-                          </span>
-                        </div>
-                      </div>
-                    <div class="col-md-3 d-flex justify-content-end mb-3">
-                      <a href="" class="btn btn-info-alt d-flex align-items-center mx-3 w-200 input-btn">
-                        Undo
-                      </a>
-                    </div>
-                    </div>
-                    <div class="d-flex flex-row">
-                      <div class="col-md-9 card p-3 d-flex flex-row">
-                        <div class="col-md-6 d-flex flex-column">
-                            <span >lorem@email.edu.gov</span>
-                        </div>
-                        <div class="col-md-6 d-flex flex-column align-items-end">
-                          <span class="status">
-                            Approved
-                          </span>
-                        </div>
-                      </div>
-                    <div class="col-md-3 d-flex justify-content-end mb-3">
-                      <a href="" class="btn btn-info-alt d-flex align-items-center mx-3 w-200 input-btn">
-                        Undo
-                      </a>
-                    </div>
-                    </div>
-                    
-
-                   
-
-                    
+              <!-- Content Starts-->
+              <div class="p-3">
+                <div class="card p-3 d-flex flex-row notif-card unread">
+                  <div class="col-md-4">
+                    <span class="notif-description">
+                      JOHN12 has requested a new Reviewer for Form #123
+                    </span>
                   </div>
-                  <!-- Row -->
+                  <div class="col-md-4 text-center">
+                    <span class="notif-date">
+                      12 OCT 2021
+                    </span>
+                  </div>
+                  <div class="col-md-4 text-right">
+                    <a href="" class="notif-mark">
+                      MARK AS READ
+                    </a>
+                  </div>
+                </div>
+                <div class="card p-3 d-flex flex-row notif-card unread">
+                  
+                  <div class="col-md-4">
+                    <span class="notif-description">
+                      JOHN12 has requested a new Reviewer for Form #123
+                    </span>
+                  </div>
+                  <div class="col-md-4 text-center">
+                    <span class="notif-date">
+                      11 OCT 2021
+                    </span>
+                  </div>
+                  <div class="col-md-4 text-right">
+                    <a href="" class="notif-mark">
+                      MARK AS READ
+                    </a>
+                  </div>
+                </div>
+                <div class="card p-3 d-flex flex-row notif-card read">
+                  <div class="col-md-4">
+                    <span class="notif-description">
+                      JOHN12 has requested a new Reviewer for Form #123
+                    </span>
+                  </div>
+                  <div class="col-md-4 text-center">
+                    <span class="notif-date">
+                      20 SEP 2021
+                    </span>
+                  </div>
                   
                 </div>
-               </div>
-
-               <div class="tab-pane" id="reviewer-stat" role="tabpanel">
-                  <div class="px-3 pt-5 pb-3">
-
-                    <div class="card p-3 d-flex flex-row">
-                      <div class="col-md-6 d-flex flex-column">
-                          <span >JOHN DOE</span>
-                          <span>#1211</span>
-                      </div>
-                      <div class="col-md-6 d-flex flex-column align-items-end">
-                        <span class="status">
-                          Reviewing in Progress
-                        </span>
-                          <span>john@gmail.com</span>
-                      </div>
-                    </div>
-
-                    <div class="card p-3 d-flex flex-row">
-                      <div class="col-md-6 d-flex flex-column">
-                          <span >Jane Doe</span>
-                          <span>#1212</span>
-                      </div>
-                      <div class="col-md-6 d-flex flex-column align-items-end">
-                        <span class="status">
-                          Reviewed
-                        </span>
-                          <span>jane@gmail.com</span>
-                      </div>
-                    </div>
-
-                    
+                <div class="card p-3 d-flex flex-row notif-card read">
+                  <div class="col-md-4">
+                    <span class="notif-description">
+                      JOHN12 has requested a new Reviewer for Form #123
+                    </span>
+                  </div>
+                  <div class="col-md-4 text-center">
+                    <span class="notif-date">
+                      20 SEP 2021
+                    </span>
+                  </div>
+                  
                 </div>
+                <div class="card p-3 d-flex flex-row notif-card read">
+                  <div class="col-md-4">
+                    <span class="notif-description">
+                      JOHN12 has requested a new Reviewer for Form #123
+                    </span>
+                  </div>
+                  <div class="col-md-4 text-center">
+                    <span class="notif-date">
+                      20 SEP 2021
+                    </span>
+                  </div>
+                  
                 </div>
-
-             </div>
-           </div>
-           <!-- Tab End-->
-           
+                <div class="card p-3 d-flex flex-row notif-card read">
+                  <div class="col-md-4">
+                    <span class="notif-description">
+                      JOHN12 has requested a new Reviewer for Form #123
+                    </span>
+                  </div>
+                  <div class="col-md-4 text-center">
+                    <span class="notif-date">
+                      20 SEP 2021
+                    </span>
+                  </div>
+                  
+                </div>
+                <div class="card p-3 d-flex flex-row notif-card read">
+                  <div class="col-md-4">
+                    <span class="notif-description">
+                      JOHN12 has requested a new Reviewer for Form #123
+                    </span>
+                  </div>
+                  <div class="col-md-4 text-center">
+                    <span class="notif-date">
+                      20 SEP 2021
+                    </span>
+                  </div>
+                  
+                </div>
+  
+              </div>
+              <!-- Content End-->
+             <!-- Pagination -->
+             <nav aria-label="...">
+              <ul class="pagination d-flex justify-content-end">
+                <li class="page-item disabled prev">
+                  <a class="page-link" href="#" tabindex="-1">Prev</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active">
+                  <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item next">
+                  <a class="page-link" href="#">Next</a>
+                </li>
+              </ul>
+            </nav>
+             <!-- End Pagination -->
+            </div>
+            <!-- Row -->
           </div>
         </div>
         <!-- End Container fluid  -->

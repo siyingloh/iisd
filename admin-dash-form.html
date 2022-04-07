@@ -7,7 +7,7 @@
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>IISD Admin Add User</title>
+  <title>IISD Admin Dashboard Form</title>
 
   <!-- Favicon icon -->
   <link rel="icon" type="image/png" sizes="16x16" href="package/assets/images/favicon.png" />
@@ -122,134 +122,179 @@
         <!-- Container fluid  -->
         <!-- -------------------------------------------------------------- -->
         <div class="container-fluid ">
+          <div>
             <div class="mt-3 d-flex justify-content-between">
               <div class="col-md-9">
-                <h1>ADD USER
+                <h1>FORMS
                 </h1>
               </div>
+              
+            </div>
+            <div class="mt-3 d-flex justify-content-between">
+              <div class="col-md-9">
+                <div class="form-floating">
+                        <input type="text" class="form-control" placeholder="" id="admin_search_form">
+                        <label for="admin_search_form">Search Form by ID</label>
+                      </div>
+              </div>
               <div class="col-md-3 d-flex justify-content-end">
-                <a href="admin-add-user.html" class="btn btn-info-alt d-flex align-items-center mx-3">
-                  Back
+                <a href="" class="btn btn-info d-flex align-items-center mx-3 w-200">
+                  Search
                 </a>
                 
               </div>
             </div>
-
-            <div class="form-card card bg-light my-5 py-3">
-                <!-- Row -->
-                <div class="row p-3">
-                    <div class="col-md-9 mx-auto">
-                        
-                    <form class="form-horizontal" action="index.html">
-                      <div class="d-flex mb-3">
-                        <div class="col-4 col-md-2 d-flex align-items-center">User Role: </div>
-                        <div class="col-4 col-md-2">
-                        <select class="select2 form-control custom-select select2-hidden-accessible role" style="width: 100%; height: 36px" data-select2-id="1" tabindex="-1" aria-hidden="true">
-                            <option value="fo" data-select2-id="389">Form Owner</option>
-                            <option value="REV1" data-select2-id="390">Reviewer</option>
-                            <option value="REV2" data-select2-id="390">Admin</option>
-                        </select>
-
-                        </div>
-                      </div>
-                        <div class="form-floating mb-3">
-                            <input
-                              type="text"
-                              class="form-control form-input-bg"
-                              id="tb-newname"
-                              placeholder=""
-                              required
-                            />
-                            <label for="tb-newname">Ful Name</label>
-                            <div class="invalid-feedback">Full name is required</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                            <div class="form-floating mb-3">
-                          <input
-                            type="email"
-                            class="form-control form-input-bg"
-                            id="tb-newemail"
-                            placeholder=""
-                            required
-                          />
-                          <label for="tb-newemail">Email</label>
-                          <div class="invalid-feedback">Email is required</div>
-                        </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-floating mb-3">
-                            <input
-                              type="number"
-                              class="form-control form-input-bg"
-                              id="tb-newnum"
-                              placeholder=""
-                              required
-                            />
-                            <label for="tb-newnum">Contact</label>
-                            <div class="invalid-feedback">Contact is required</div>
-                        </div>
-                            </div>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <input
-                              type="text"
-                              class="form-control form-input-bg"
-                              id="tb-neworg"
-                              placeholder=""
-                              required
-                            />
-                            <label for="tb-neworg">Organization</label>
-                            <div class="invalid-feedback">Organization is required</div>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <input
-                              type="text"
-                              class="form-control form-input-bg"
-                              id="tb-newtitle"
-                              placeholder=""
-                            />
-                            <label for="tb-newtitle">Job Title</label>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <input
-                              type="text"
-                              class="form-control form-input-bg"
-                              id="tb-newadd1"
-                              placeholder=""
-                              required
-                            />
-                            <label for="tb-newadd1">Address Line 1</label>
-                            <div class="invalid-feedback">Address is required</div>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <input
-                              type="text"
-                              class="form-control form-input-bg"
-                              id="tb-newadd2"
-                              placeholder=""
-                            />
-                            <label for="tb-newadd2">Address Line 2</label>
-                        </div>
-                        
-                        
-                        
-                        <div class="d-flex align-items-stretch justify-content-end">
-                          <button type="submit" class="btn btn-info d-block">
-                            Add User
-                          </button>
-                        </div>
-                      </form>
-                    </div>
-                    
-                </div>
-
-            </div>
-          
-           
-
-            
           </div>
+          <!-- Tab Form Starts-->
+          <div class="py-3">
+            <!-- Nav tabs -->
+         <ul class="nav nav-tabs" role="tablist">
+             <li class="nav-item">
+                 <a class="nav-link active" data-bs-toggle="tab" href="#draft" role="tab">
+                     <span>Draft (1)</span>
+                 </a>
+             </li>
+             <li class="nav-item">
+                 <a class="nav-link" data-bs-toggle="tab" href="#review" role="tab">
+                     <span>Reviewing in Progress (3)</span>
+                 </a>
+             </li>
+             <li class="nav-item">
+                 <a class="nav-link" data-bs-toggle="tab" href="#validate" role="tab">
+                     <span>Validating in Progress (0)</span>
+                 </a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" data-bs-toggle="tab" href="#past" role="tab">
+                   <span>Past Forms (0)</span>
+               </a>
+           </li>
+         </ul>
+         <!-- Tab panes -->
+         <div class="tab-content">
+             <div class="tab-pane active" id="draft" role="tabpanel">
+                 <div class="px-3 pt-5 pb-3">
+                     <div class="card my-3 p-3">
+                       <div class="d-flex">
+                         <div class="col-md-6 d-flex flex-column">
+                           <span class="mb-3">
+                             FORM 125
+                           </span>
+                           <a href="" class="form-link">
+                             REVIEWER
+                           </a>
+                         </div>
+                         <div class="col-md-6 d-flex flex-column justify-content-between align-items-end">
+                           <span class="mb-3">
+                             Score: xx / xx
+                           </span>
+                           <a href="" class="btn btn-info-alt">
+                             View Form
+                           </a>
+                         </div>
+                       </div>
+                     </div>
+                 </div>
+             </div>
+             <div class="tab-pane" id="review" role="tabpanel">
+               <div class="px-3 pt-5 pb-3">
+                 <div class="card my-3 p-3">
+                   <div class="d-flex">
+                     <div class="col-md-6 d-flex flex-column">
+                       <span class="mb-3">
+                         FORM 123
+                       </span>
+                       <a href="" class="form-link">
+                         REVIEWER
+                       </a>
+                       
+                     </div>
+                     <div class="col-md-6 d-flex flex-column justify-content-between align-items-end">
+                       <span class="mb-3">
+                         Score: xx / xx
+                       </span>
+                       <a href="" class="btn btn-info-alt">
+                         View Form
+                       </a>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="card my-3 p-3">
+                   <div class="d-flex">
+                     <div class="col-md-6 d-flex flex-column">
+                       <span class="mb-3">
+                         FORM 124
+                       </span>
+                       <a href="" class="form-link">
+                         REVIEWER
+                       </a>
+                       
+                     </div>
+                     <div class="col-md-6 d-flex flex-column justify-content-between align-items-end">
+                       <span class="mb-3">
+                         Score: xx / xx
+                       </span>
+                       <a href="" class="btn btn-info-alt">
+                         View Form
+                       </a>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="card my-3 p-3">
+                   <div class="d-flex">
+                     <div class="col-md-6 d-flex flex-column">
+                       <span class="mb-3">
+                         FORM 125
+                       </span>
+                       <a href="" class="form-link">
+                         REVIEWER
+                       </a>
+                       
+                     </div>
+                     <div class="col-md-6 d-flex flex-column justify-content-between align-items-end">
+                       <span class="mb-3">
+                         Score: xx / xx
+                       </span>
+                       <a href="" class="btn btn-info-alt">
+                         View Form
+                       </a>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div class="tab-pane" id="validate" role="tabpanel">
+               <div class="px-3 py-5">
+                 <p>There are currently no forms in this tab</p>
+               </div>
+             </div>
+             <div class="tab-pane" id="past" role="tabpanel">
+               <div class="px-3 py-5">
+                 <p>There are currently no forms in this tab</p>
+               </div>
+
+               
+           </div>
+         </div>
+         </div>
+         <!-- Tap Forms End-->
+        <!-- Pagination -->
+        <nav aria-label="...">
+         <ul class="pagination d-flex justify-content-end">
+           <li class="page-item disabled prev">
+             <a class="page-link" href="#" tabindex="-1">Prev</a>
+           </li>
+           <li class="page-item"><a class="page-link" href="#">1</a></li>
+           <li class="page-item active">
+             <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+           </li>
+           <li class="page-item"><a class="page-link" href="#">3</a></li>
+           <li class="page-item next">
+             <a class="page-link" href="#">Next</a>
+           </li>
+         </ul>
+       </nav>
+        <!-- End Pagination -->
         </div>
         <!-- End Container fluid  -->
         
