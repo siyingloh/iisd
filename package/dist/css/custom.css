@@ -275,3 +275,10 @@ a:hover,
     border: 1px solid #ccc;
     padding: 1rem;
 }
+ol li ol,
+ol li ol li ol {
+    padding-left: 0.85rem;
+}
+.offset-left {
+    padding-left: 1rem;
+}
